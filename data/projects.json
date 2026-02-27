@@ -22,7 +22,11 @@
         "en": "# ⚡ ln-tip-jar\n\nReusable Web Component to accept micro-donations via **Lightning Network**. Works in static HTML, React, Vue or any web environment with no framework dependencies.\n\n## Usage\n\n```html\n<script src=\"ln-tip-jar.js\"></script>\n\n<ln-tip-jar\n  ln-address=\"yourname@walletofsatoshi.com\"\n  portfolio-url=\"https://yourdomain.com\"\n  portfolio-label=\"See more projects\"\n  hover-text=\"Buy me a coffee? 😊\"\n  button-position=\"right\"\n></ln-tip-jar>\n```\n\n## Attributes\n\n| Attribute | Description | Default |\n|---|---|---|\n| `ln-address` | Recipient's Lightning Address | — |\n| `portfolio-url` | Portfolio link URL | `#` |\n| `portfolio-label` | Portfolio link text | `See more projects` |\n| `hover-text` | Text shown on button hover | `Buy me a coffee? 😊` |\n| `button-position` | Button position: `left` or `right` | `right` |\n\n## Features\n\n- **Floating button** that expands on hover toward the center of the screen\n- **Modal** with fade-in + scale animation, anchored above the button\n- **QR code** for the Lightning Address (lazy load via CDN, only when the modal opens)\n- **Copy to clipboard** with visual feedback\n- **Encapsulated CSS** via Shadow DOM — never interferes with host project styles\n- **Accessible**: `role=\"dialog\"`, ARIA labels, focus management, `Escape` to close\n- **No framework dependencies** — a single JS file\n\n## License\n\nMIT"
       },
       "tags": ["web", "tool"],
-      "images": [],
+      "images": [
+        "projects/ln-tip-jar/img/ln-tip-jar3.webp",
+        "projects/ln-tip-jar/img/ln-tip-jar2.webp",
+        "projects/ln-tip-jar/img/ln-tip-jar1.webp",
+      ],
       "links": {
         "github": "https://github.com/aaronFortuno/ln-tip-jar",
         "demo": "https://aaronfortuno.github.io/ln-tip-jar/",
