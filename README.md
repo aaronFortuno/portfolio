@@ -1,6 +1,6 @@
 # Portfolio
 
-Personal portfolio to showcase small web projects, apps and MVPs — hosted on GitHub Pages.
+Personal portfolio to showcase small web projects, apps and MVPs — hosted on GitHub Pages, available [here](https://aaronfortuno.github.io/portfolio/).
 
 ## Features
 
