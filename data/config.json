@@ -1,0 +1,57 @@
+{
+  "site": {
+    "author": "El teu nom",
+    "githubUser": "github-username",
+    "defaultLang": "ca",
+    "defaultTheme": "dark"
+  },
+  "appearance": {
+    "fontHeading": "Inter",
+    "fontBody": "Inter",
+    "fontMono": "JetBrains Mono",
+    "borderRadius": "12px",
+    "cardShadow": "0 8px 32px rgba(0,0,0,0.4)",
+    "accentColor": "#22c55e",
+    "themes": {
+      "dark": {
+        "bg": "#0a0f0a",
+        "surface": "#111811",
+        "surfaceHover": "#182018",
+        "text": "#e2ece2",
+        "textMuted": "#7a9e7a",
+        "border": "#1e2e1e"
+      },
+      "light": {
+        "bg": "#f0f7f0",
+        "surface": "#ffffff",
+        "surfaceHover": "#e8f5e8",
+        "text": "#0f1f0f",
+        "textMuted": "#4a724a",
+        "border": "#c8e0c8"
+      }
+    }
+  },
+  "header": {
+    "title": {
+      "ca": "Projectes",
+      "es": "Proyectos",
+      "en": "Projects"
+    },
+    "subtitle": {
+      "ca": "El que vaig creant",
+      "es": "Lo que voy creando",
+      "en": "Things I build"
+    },
+    "showAvatar": false,
+    "avatarUrl": ""
+  },
+  "footer": {
+    "showLicense": true,
+    "showGithubLink": true,
+    "customText": {
+      "ca": "",
+      "es": "",
+      "en": ""
+    }
+  }
+}

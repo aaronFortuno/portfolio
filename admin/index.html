@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin — Portfolio</title>
+  <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+<div class="admin-layout">
+
+  <!-- SIDEBAR -->
+  <aside class="admin-sidebar">
+    <div class="sidebar-logo">
+      ⬡ Admin <span>Portfolio</span>
+    </div>
+    <nav class="sidebar-nav" role="navigation">
+      <div class="nav-item active" data-panel="projects">
+        <span>📋</span> Projectes
+      </div>
+      <div class="nav-item" data-panel="tags">
+        <span>🏷️</span> Etiquetes
+      </div>
+      <div class="nav-item" data-panel="config">
+        <span>🎨</span> Aparença
+      </div>
+      <div class="nav-item" data-panel="json">
+        <span>{ }</span> JSON Raw
+      </div>
+    </nav>
+    <div class="sidebar-footer">
+      Executa des de la rel del projecte:<br>
+      <code>npx serve .</code><br>
+      → <code>localhost:3000/admin/</code>
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="admin-main">
+
+    <!-- ════════════════════════════
+         PANEL: PROJECTS
+    ════════════════════════════ -->
+    <div class="admin-panel active" id="panel-projects">
+      <div class="panel-header">
+        <h1 class="panel-title">Gestió de projectes</h1>
+        <p class="panel-desc">Afegeix, edita i ordena els projectes del portfolio.</p>
+      </div>
+
+      <div class="toolbar">
+        <button class="btn btn-primary" id="btn-new-project">+ Nou projecte</button>
+        <button class="btn" id="btn-import-projects">⬆ Importar JSON</button>
+        <button class="btn" id="btn-export-projects">⬇ Exportar JSON</button>
+        <input type="file" id="input-import-projects" accept=".json" style="display:none">
+        <span style="margin-left:auto;font-size:0.75rem;color:var(--text-muted)" id="projects-status"></span>
+      </div>
+
+      <div class="project-list" id="project-list">
+        <!-- Rendered by admin.js -->
+      </div>
+    </div>
+
+    <!-- ════════════════════════════
+         PANEL: PROJECT FORM (inline)
+    ════════════════════════════ -->
+    <div class="admin-panel" id="panel-project-form">
+      <div class="panel-header" style="display:flex;align-items:center;gap:0.75rem">
+        <button class="btn btn-sm" id="btn-back-to-projects">← Tornar</button>
+        <div>
+          <h1 class="panel-title" id="form-title">Nou projecte</h1>
+          <p class="panel-desc" id="form-subtitle">Omple les dades del projecte.</p>
+        </div>
+      </div>
+
+      <form id="project-form" autocomplete="off">
+
+        <!-- Basic -->
+        <div class="form-section">
+          <p class="form-title">Informació bàsica</p>
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="f-id">ID / Slug</label>
+              <input type="text" id="f-id" placeholder="my-project-slug" required>
+              <span class="form-hint">Carpeta: projects/<em>slug</em>/img/</span>
+            </div>
+            <div class="form-group">
+              <label for="f-date">Data</label>
+              <input type="date" id="f-date">
+            </div>
+            <div class="form-group" style="display:flex;flex-direction:row;align-items:center;gap:1.5rem;padding-top:0.5rem">
+              <div class="toggle-row">
+                <input type="checkbox" id="f-visible" checked>
+                <label for="f-visible">Visible</label>
+              </div>
+              <div class="toggle-row">
+                <input type="checkbox" id="f-featured">
+                <label for="f-featured">Destacat</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Languages of project -->
+        <div class="form-section">
+          <p class="form-title">Idiomes del projecte</p>
+          <div class="tags-multiselect" id="proj-lang-select">
+            <button type="button" class="tag-toggle" data-lang="ca">Català</button>
+            <button type="button" class="tag-toggle" data-lang="es">Castellà</button>
+            <button type="button" class="tag-toggle" data-lang="en">Anglès</button>
+            <button type="button" class="tag-toggle" data-lang="agnostic">Sense idioma</button>
+          </div>
+          <span class="form-hint" style="margin-top:0.4rem;display:block">Selecciona els idiomes en els que el projecte és rellevant.</span>
+        </div>
+
+        <!-- Title -->
+        <div class="form-section">
+          <p class="form-title">Títol</p>
+          <div class="lang-tabs">
+            <button type="button" class="lang-tab active" data-lang-tab="title" data-lang="ca">CA</button>
+            <button type="button" class="lang-tab" data-lang-tab="title" data-lang="es">ES</button>
+            <button type="button" class="lang-tab" data-lang-tab="title" data-lang="en">EN</button>
+          </div>
+          <div class="lang-pane active" data-lang-pane="title" data-lang="ca">
+            <input type="text" id="f-title-ca" placeholder="Títol en català">
+          </div>
+          <div class="lang-pane" data-lang-pane="title" data-lang="es">
+            <input type="text" id="f-title-es" placeholder="Título en castellano">
+          </div>
+          <div class="lang-pane" data-lang-pane="title" data-lang="en">
+            <input type="text" id="f-title-en" placeholder="Title in English">
+          </div>
+        </div>
+
+        <!-- Short description -->
+        <div class="form-section">
+          <p class="form-title">Descripció curta <span style="font-weight:400;text-transform:none">(apareix a la card)</span></p>
+          <div class="lang-tabs">
+            <button type="button" class="lang-tab active" data-lang-tab="short" data-lang="ca">CA</button>
+            <button type="button" class="lang-tab" data-lang-tab="short" data-lang="es">ES</button>
+            <button type="button" class="lang-tab" data-lang-tab="short" data-lang="en">EN</button>
+          </div>
+          <div class="lang-pane active" data-lang-pane="short" data-lang="ca">
+            <textarea id="f-short-ca" placeholder="Descripció curta en català…" rows="2"></textarea>
+          </div>
+          <div class="lang-pane" data-lang-pane="short" data-lang="es">
+            <textarea id="f-short-es" placeholder="Descripción corta en castellano…" rows="2"></textarea>
+          </div>
+          <div class="lang-pane" data-lang-pane="short" data-lang="en">
+            <textarea id="f-short-en" placeholder="Short description in English…" rows="2"></textarea>
+          </div>
+        </div>
+
+        <!-- Full description -->
+        <div class="form-section">
+          <p class="form-title">Descripció completa <span style="font-weight:400;text-transform:none">(Markdown, modal detall)</span></p>
+          <div class="lang-tabs">
+            <button type="button" class="lang-tab active" data-lang-tab="full" data-lang="ca">CA</button>
+            <button type="button" class="lang-tab" data-lang-tab="full" data-lang="es">ES</button>
+            <button type="button" class="lang-tab" data-lang-tab="full" data-lang="en">EN</button>
+          </div>
+          <div class="lang-pane active" data-lang-pane="full" data-lang="ca">
+            <textarea id="f-full-ca" placeholder="# Títol\n\nDescripció completa en Markdown…" rows="8"></textarea>
+          </div>
+          <div class="lang-pane" data-lang-pane="full" data-lang="es">
+            <textarea id="f-full-es" placeholder="# Título\n\nDescripción completa en Markdown…" rows="8"></textarea>
+          </div>
+          <div class="lang-pane" data-lang-pane="full" data-lang="en">
+            <textarea id="f-full-en" placeholder="# Title\n\nFull description in Markdown…" rows="8"></textarea>
+          </div>
+        </div>
+
+        <!-- Tags -->
+        <div class="form-section">
+          <p class="form-title">Etiquetes</p>
+          <div class="tags-multiselect" id="project-tags-select">
+            <!-- Rendered dynamically from tags data -->
+          </div>
+        </div>
+
+        <!-- Images -->
+        <div class="form-section">
+          <p class="form-title">Imatges</p>
+          <span class="form-hint" style="display:block;margin-bottom:0.5rem">
+            Rutes relatives des de l'arrel del portfolio. Ex: <code>projects/my-project/img/screenshot-01.webp</code>
+          </span>
+          <div class="image-list" id="image-list"></div>
+          <button type="button" class="btn btn-sm" id="btn-add-image">+ Afegir imatge</button>
+        </div>
+
+        <!-- Links -->
+        <div class="form-section">
+          <p class="form-title">Enllaços</p>
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="f-link-github">GitHub</label>
+              <input type="url" id="f-link-github" placeholder="https://github.com/user/repo">
+            </div>
+            <div class="form-group">
+              <label for="f-link-demo">Demo</label>
+              <input type="url" id="f-link-demo" placeholder="https://user.github.io/repo">
+            </div>
+            <div class="form-group">
+              <label for="f-link-docs">Documentació</label>
+              <input type="url" id="f-link-docs" placeholder="https://…">
+            </div>
+          </div>
+        </div>
+
+        <!-- Actions -->
+        <div style="display:flex;gap:0.5rem;padding-top:0.5rem;border-top:1px solid var(--border);margin-top:0.5rem">
+          <button type="submit" class="btn btn-primary">💾 Guardar projecte</button>
+          <button type="button" class="btn btn-danger" id="btn-delete-project" style="display:none">🗑 Eliminar</button>
+          <button type="button" class="btn" id="btn-cancel-project" style="margin-left:auto">Cancel·lar</button>
+        </div>
+
+      </form>
+    </div>
+
+    <!-- ════════════════════════════
+         PANEL: TAGS
+    ════════════════════════════ -->
+    <div class="admin-panel" id="panel-tags">
+      <div class="panel-header">
+        <h1 class="panel-title">Gestió d'etiquetes</h1>
+        <p class="panel-desc">Defineix les etiquetes disponibles i les seves traduccions.</p>
+      </div>
+      <div class="toolbar">
+        <button class="btn btn-primary" id="btn-new-tag">+ Nova etiqueta</button>
+      </div>
+      <div id="tags-list" style="display:flex;flex-direction:column;gap:0.5rem"></div>
+    </div>
+
+    <!-- ════════════════════════════
+         PANEL: CONFIG / APPEARANCE
+    ════════════════════════════ -->
+    <div class="admin-panel" id="panel-config">
+      <div class="panel-header">
+        <h1 class="panel-title">Configuració d'aparença</h1>
+        <p class="panel-desc">Personalitza colors, tipografia, header i footer.</p>
+      </div>
+
+      <div class="toolbar">
+        <button class="btn" id="btn-import-config">⬆ Importar config.json</button>
+        <button class="btn btn-primary" id="btn-export-config">⬇ Exportar config.json</button>
+        <input type="file" id="input-import-config" accept=".json" style="display:none">
+      </div>
+
+      <form id="config-form">
+
+        <!-- Site info -->
+        <div class="form-section">
+          <p class="form-title">Lloc</p>
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="c-author">Autor</label>
+              <input type="text" id="c-author" placeholder="El teu nom">
+            </div>
+            <div class="form-group">
+              <label for="c-github-user">Usuari GitHub</label>
+              <input type="text" id="c-github-user" placeholder="github-username">
+            </div>
+            <div class="form-group">
+              <label for="c-default-lang">Idioma per defecte</label>
+              <select id="c-default-lang">
+                <option value="ca">Català</option>
+                <option value="es">Castellà</option>
+                <option value="en">Anglès</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="c-default-theme">Tema per defecte</label>
+              <select id="c-default-theme">
+                <option value="dark">Fosc</option>
+                <option value="light">Clar</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Header -->
+        <div class="form-section">
+          <p class="form-title">Header</p>
+          <div class="lang-tabs">
+            <button type="button" class="lang-tab active" data-lang-tab="header" data-lang="ca">CA</button>
+            <button type="button" class="lang-tab" data-lang-tab="header" data-lang="es">ES</button>
+            <button type="button" class="lang-tab" data-lang-tab="header" data-lang="en">EN</button>
+          </div>
+          <div class="lang-pane active" data-lang-pane="header" data-lang="ca">
+            <div class="form-grid">
+              <div class="form-group"><label>Títol (CA)</label><input type="text" id="c-header-title-ca" placeholder="Projectes"></div>
+              <div class="form-group"><label>Subtítol (CA)</label><input type="text" id="c-header-subtitle-ca" placeholder="El que vaig creant"></div>
+            </div>
+          </div>
+          <div class="lang-pane" data-lang-pane="header" data-lang="es">
+            <div class="form-grid">
+              <div class="form-group"><label>Título (ES)</label><input type="text" id="c-header-title-es" placeholder="Proyectos"></div>
+              <div class="form-group"><label>Subtítulo (ES)</label><input type="text" id="c-header-subtitle-es" placeholder="Lo que voy creando"></div>
+            </div>
+          </div>
+          <div class="lang-pane" data-lang-pane="header" data-lang="en">
+            <div class="form-grid">
+              <div class="form-group"><label>Title (EN)</label><input type="text" id="c-header-title-en" placeholder="Projects"></div>
+              <div class="form-group"><label>Subtitle (EN)</label><input type="text" id="c-header-subtitle-en" placeholder="Things I build"></div>
+            </div>
+          </div>
+          <div style="margin-top:0.75rem" class="form-group">
+            <div class="toggle-row" style="margin-bottom:0.5rem">
+              <input type="checkbox" id="c-show-avatar">
+              <label for="c-show-avatar">Mostrar avatar</label>
+            </div>
+            <input type="text" id="c-avatar-url" placeholder="assets/img/avatar.webp">
+          </div>
+        </div>
+
+        <!-- Appearance -->
+        <div class="form-section">
+          <p class="form-title">Colors i tipografia</p>
+          <div class="form-grid">
+            <div class="form-group">
+              <label>Color d'accent</label>
+              <div class="color-input-row">
+                <input type="color" id="c-accent-color" value="#22c55e">
+                <input type="text" id="c-accent-color-text" value="#22c55e" maxlength="7">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="c-border-radius">Border radius</label>
+              <input type="text" id="c-border-radius" value="12px" placeholder="12px">
+            </div>
+            <div class="form-group">
+              <label for="c-font-heading">Font heading</label>
+              <input type="text" id="c-font-heading" placeholder="Inter">
+            </div>
+            <div class="form-group">
+              <label for="c-font-body">Font body</label>
+              <input type="text" id="c-font-body" placeholder="Inter">
+            </div>
+            <div class="form-group">
+              <label for="c-font-mono">Font mono</label>
+              <input type="text" id="c-font-mono" placeholder="JetBrains Mono">
+            </div>
+          </div>
+        </div>
+
+        <!-- Theme colors -->
+        <div class="form-section">
+          <p class="form-title">Colors del tema fosc</p>
+          <div class="form-grid form-grid-3">
+            <div class="form-group"><label>Background</label><div class="color-input-row"><input type="color" id="c-dark-bg" value="#0a0f0a"><input type="text" id="c-dark-bg-text" value="#0a0f0a" maxlength="7"></div></div>
+            <div class="form-group"><label>Surface</label><div class="color-input-row"><input type="color" id="c-dark-surface" value="#111811"><input type="text" id="c-dark-surface-text" value="#111811" maxlength="7"></div></div>
+            <div class="form-group"><label>Text</label><div class="color-input-row"><input type="color" id="c-dark-text" value="#e2ece2"><input type="text" id="c-dark-text-text" value="#e2ece2" maxlength="7"></div></div>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <p class="form-title">Colors del tema clar</p>
+          <div class="form-grid form-grid-3">
+            <div class="form-group"><label>Background</label><div class="color-input-row"><input type="color" id="c-light-bg" value="#f0f7f0"><input type="text" id="c-light-bg-text" value="#f0f7f0" maxlength="7"></div></div>
+            <div class="form-group"><label>Surface</label><div class="color-input-row"><input type="color" id="c-light-surface" value="#ffffff"><input type="text" id="c-light-surface-text" value="#ffffff" maxlength="7"></div></div>
+            <div class="form-group"><label>Text</label><div class="color-input-row"><input type="color" id="c-light-text" value="#0f1f0f"><input type="text" id="c-light-text-text" value="#0f1f0f" maxlength="7"></div></div>
+          </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="form-section">
+          <p class="form-title">Footer</p>
+          <div class="form-grid">
+            <div class="toggle-row"><input type="checkbox" id="c-show-license" checked><label for="c-show-license">Mostrar llicència GPL</label></div>
+            <div class="toggle-row"><input type="checkbox" id="c-show-github" checked><label for="c-show-github">Mostrar link GitHub</label></div>
+          </div>
+          <div class="form-group" style="margin-top:0.75rem">
+            <label>Text personalitzat al footer</label>
+            <div class="lang-tabs">
+              <button type="button" class="lang-tab active" data-lang-tab="footer" data-lang="ca">CA</button>
+              <button type="button" class="lang-tab" data-lang-tab="footer" data-lang="es">ES</button>
+              <button type="button" class="lang-tab" data-lang-tab="footer" data-lang="en">EN</button>
+            </div>
+            <div class="lang-pane active" data-lang-pane="footer" data-lang="ca"><input type="text" id="c-footer-text-ca" placeholder="Text opcionals al footer (CA)"></div>
+            <div class="lang-pane" data-lang-pane="footer" data-lang="es"><input type="text" id="c-footer-text-es" placeholder="Texto opcional en el footer (ES)"></div>
+            <div class="lang-pane" data-lang-pane="footer" data-lang="en"><input type="text" id="c-footer-text-en" placeholder="Optional footer text (EN)"></div>
+          </div>
+        </div>
+
+        <div style="padding-top:0.5rem;border-top:1px solid var(--border)">
+          <button type="submit" class="btn btn-primary">💾 Guardar i exportar config.json</button>
+        </div>
+
+      </form>
+    </div>
+
+    <!-- ════════════════════════════
+         PANEL: JSON RAW
+    ════════════════════════════ -->
+    <div class="admin-panel" id="panel-json">
+      <div class="panel-header">
+        <h1 class="panel-title">JSON Raw</h1>
+        <p class="panel-desc">Edita directament el JSON de projectes o configuració.</p>
+      </div>
+      <div class="toolbar">
+        <button class="btn active" id="btn-json-projects" style="border-color:var(--accent);color:var(--accent)">projects.json</button>
+        <button class="btn" id="btn-json-config">config.json</button>
+        <button class="btn btn-primary" id="btn-json-apply" style="margin-left:auto">✓ Aplicar i exportar</button>
+      </div>
+      <textarea class="json-editor" id="json-editor" spellcheck="false"></textarea>
+      <p id="json-error" style="color:#dc2626;font-size:0.78rem;margin-top:0.5rem;display:none"></p>
+    </div>
+
+  </main>
+</div>
+
+<script src="admin.js"></script>
+</body>
+</html>

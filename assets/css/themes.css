@@ -1,0 +1,66 @@
+/* ============================================================
+   THEMES — CSS custom properties for dark/light modes
+   Values are overridden at runtime by theme.js from config.json
+   ============================================================ */
+
+:root {
+  /* Accent */
+  --accent:        #22c55e;
+  --accent-dim:    #16a34a;
+  --accent-glow:   rgba(34, 197, 94, 0.15);
+
+  /* Typography */
+  --font-heading: 'Inter', system-ui, sans-serif;
+  --font-body:    'Inter', system-ui, sans-serif;
+  --font-mono:    'JetBrains Mono', 'Fira Code', monospace;
+
+  /* Shape */
+  --radius:       12px;
+  --radius-sm:    6px;
+  --radius-lg:    20px;
+
+  /* Motion */
+  --transition:   0.2s ease;
+  --transition-slow: 0.35s ease;
+
+  /* Z-layers */
+  --z-header:     100;
+  --z-filters:    90;
+  --z-modal:      200;
+  --z-modal-bg:   199;
+}
+
+/* ── DARK (default) ── */
+[data-theme="dark"],
+:root {
+  --bg:            #0a0f0a;
+  --surface:       #111811;
+  --surface-hover: #182018;
+  --surface-2:     #1e2e1e;
+  --text:          #e2ece2;
+  --text-muted:    #7a9e7a;
+  --text-faint:    #3a5e3a;
+  --border:        #1e2e1e;
+  --shadow:        0 8px 32px rgba(0, 0, 0, 0.55);
+  --shadow-sm:     0 2px 8px  rgba(0, 0, 0, 0.4);
+  --shadow-lg:     0 16px 56px rgba(0, 0, 0, 0.7);
+  --scrollbar-track: #111811;
+  --scrollbar-thumb: #1e2e1e;
+}
+
+/* ── LIGHT ── */
+[data-theme="light"] {
+  --bg:            #f0f7f0;
+  --surface:       #ffffff;
+  --surface-hover: #e8f5e8;
+  --surface-2:     #d8ecd8;
+  --text:          #0f1f0f;
+  --text-muted:    #4a724a;
+  --text-faint:    #b0ceb0;
+  --border:        #c8e0c8;
+  --shadow:        0 4px 20px rgba(0, 60, 0, 0.1);
+  --shadow-sm:     0 1px 6px  rgba(0, 60, 0, 0.08);
+  --shadow-lg:     0 12px 40px rgba(0, 60, 0, 0.15);
+  --scrollbar-track: #e8f5e8;
+  --scrollbar-thumb: #c8e0c8;
+}

@@ -1,0 +1,55 @@
+{
+  "nav": {
+    "filterAll": "Todos",
+    "filterAgnostic": "Sin idioma"
+  },
+  "filters": {
+    "tags": "Etiquetas",
+    "languages": "Idioma del proyecto",
+    "clearAll": "Limpiar filtros",
+    "active": "Filtros activos"
+  },
+  "card": {
+    "viewMore": "Ver más",
+    "noImage": "Sin imagen",
+    "featured": "Destacado"
+  },
+  "modal": {
+    "close": "Cerrar",
+    "links": "Enlaces",
+    "github": "Código fuente",
+    "demo": "Demo en vivo",
+    "docs": "Documentación",
+    "images": "Imágenes",
+    "description": "Descripción"
+  },
+  "theme": {
+    "dark": "Modo oscuro",
+    "light": "Modo claro",
+    "toggle": "Cambiar tema"
+  },
+  "lang": {
+    "ca": "Catalán",
+    "es": "Castellano",
+    "en": "Inglés",
+    "select": "Selecciona idioma"
+  },
+  "projectLang": {
+    "available": "Disponible en",
+    "agnostic": "Sin idioma",
+    "ca": "Catalán",
+    "es": "Castellano",
+    "en": "Inglés"
+  },
+  "empty": {
+    "noResults": "Ningún proyecto coincide con los filtros seleccionados.",
+    "clearFilters": "Limpiar filtros"
+  },
+  "aria": {
+    "closeModal": "Cerrar detalle del proyecto",
+    "prevImage": "Imagen anterior",
+    "nextImage": "Imagen siguiente",
+    "themeToggle": "Cambiar modo claro/oscuro",
+    "langSelect": "Seleccionar idioma"
+  }
+}

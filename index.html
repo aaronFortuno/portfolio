@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ca" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio de projectes web, aplicacions i MVPs">
+  <title>Portfolio</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+
+  <!-- Google Fonts — Inter + JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/themes.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+
+  <!-- marked.js (Markdown renderer, bundled locally) -->
+  <script src="assets/js/vendor/marked.min.js"></script>
+</head>
+<body>
+
+<div class="site-wrapper">
+
+  <!-- ══════════════════════════════════════
+       HEADER
+  ══════════════════════════════════════ -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+
+      <!-- Brand -->
+      <div class="header-brand">
+        <img id="header-avatar" class="header-avatar" src="" alt="Avatar" aria-hidden="true"
+             style="display:none">
+        <div>
+          <div id="header-title" class="header-title">Projectes</div>
+          <div id="header-subtitle" class="header-subtitle"></div>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <div class="header-controls" role="toolbar" aria-label="Controls">
+
+        <!-- Language selector -->
+        <label for="lang-select" class="sr-only" data-i18n="lang.select">Selecciona idioma</label>
+        <select id="lang-select" class="lang-select"
+                aria-label="Selecciona idioma" data-i18n-attr="aria-label" data-i18n="lang.select">
+          <option value="ca">CA</option>
+          <option value="es">ES</option>
+          <option value="en">EN</option>
+        </select>
+
+        <!-- Theme toggle -->
+        <button id="theme-toggle" class="theme-toggle"
+                aria-label="Canviar tema" title="Canviar tema">
+          <span class="theme-icon" aria-hidden="true">☀</span>
+        </button>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- ══════════════════════════════════════
+       MAIN
+  ══════════════════════════════════════ -->
+  <main class="site-main" id="main-content">
+
+    <!-- Filters -->
+    <section class="filters-section" id="filters-section" aria-label="Filtres">
+      <!-- Rendered by filters.js -->
+    </section>
+
+    <!-- Project count -->
+    <div class="section-header">
+      <p class="project-count" id="project-count" aria-live="polite" aria-atomic="true"></p>
+    </div>
+
+    <!-- Projects grid -->
+    <section id="projects-grid" class="projects-grid" aria-label="Projectes">
+      <!-- Skeleton placeholders while loading -->
+      <div class="skeleton skeleton-card"></div>
+      <div class="skeleton skeleton-card"></div>
+      <div class="skeleton skeleton-card"></div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════ -->
+  <footer class="site-footer" role="contentinfo">
+    <p id="footer-custom" style="display:none"></p>
+    <p id="footer-license">
+      Contingut sota llicència
+      <a href="LICENSE" target="_blank" rel="noopener">GNU GPL v3</a>
+    </p>
+    <p>
+      <a id="footer-github" href="#" target="_blank" rel="noopener noreferrer"
+         style="display:none">GitHub</a>
+    </p>
+  </footer>
+
+</div><!-- /.site-wrapper -->
+
+<!-- ══════════════════════════════════════
+     MODAL (inserted by modal.js at runtime)
+══════════════════════════════════════ -->
+
+<!-- ══════════════════════════════════════
+     SCRIPTS (order matters)
+══════════════════════════════════════ -->
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/theme.js"></script>
+<script src="assets/js/carousel.js"></script>
+<script src="assets/js/modal.js"></script>
+<script src="assets/js/filters.js"></script>
+<script src="assets/js/renderer.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>

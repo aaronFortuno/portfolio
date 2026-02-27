@@ -1,0 +1,55 @@
+{
+  "nav": {
+    "filterAll": "All",
+    "filterAgnostic": "Language-agnostic"
+  },
+  "filters": {
+    "tags": "Tags",
+    "languages": "Project language",
+    "clearAll": "Clear filters",
+    "active": "Active filters"
+  },
+  "card": {
+    "viewMore": "View more",
+    "noImage": "No image",
+    "featured": "Featured"
+  },
+  "modal": {
+    "close": "Close",
+    "links": "Links",
+    "github": "Source code",
+    "demo": "Live demo",
+    "docs": "Documentation",
+    "images": "Images",
+    "description": "Description"
+  },
+  "theme": {
+    "dark": "Dark mode",
+    "light": "Light mode",
+    "toggle": "Toggle theme"
+  },
+  "lang": {
+    "ca": "Catalan",
+    "es": "Spanish",
+    "en": "English",
+    "select": "Select language"
+  },
+  "projectLang": {
+    "available": "Available in",
+    "agnostic": "Language-agnostic",
+    "ca": "Catalan",
+    "es": "Spanish",
+    "en": "English"
+  },
+  "empty": {
+    "noResults": "No projects match the selected filters.",
+    "clearFilters": "Clear filters"
+  },
+  "aria": {
+    "closeModal": "Close project detail",
+    "prevImage": "Previous image",
+    "nextImage": "Next image",
+    "themeToggle": "Toggle light/dark mode",
+    "langSelect": "Select language"
+  }
+}

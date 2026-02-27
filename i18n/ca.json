@@ -1,0 +1,55 @@
+{
+  "nav": {
+    "filterAll": "Tots",
+    "filterAgnostic": "Sense idioma"
+  },
+  "filters": {
+    "tags": "Etiquetes",
+    "languages": "Idioma del projecte",
+    "clearAll": "Netejar filtres",
+    "active": "Filtres actius"
+  },
+  "card": {
+    "viewMore": "Veure més",
+    "noImage": "Sense imatge",
+    "featured": "Destacat"
+  },
+  "modal": {
+    "close": "Tancar",
+    "links": "Enllaços",
+    "github": "Codi font",
+    "demo": "Demo en viu",
+    "docs": "Documentació",
+    "images": "Imatges",
+    "description": "Descripció"
+  },
+  "theme": {
+    "dark": "Mode fosc",
+    "light": "Mode clar",
+    "toggle": "Canviar tema"
+  },
+  "lang": {
+    "ca": "Català",
+    "es": "Castellà",
+    "en": "Anglès",
+    "select": "Selecciona idioma"
+  },
+  "projectLang": {
+    "available": "Disponible en",
+    "agnostic": "Sense idioma",
+    "ca": "Català",
+    "es": "Castellà",
+    "en": "Anglès"
+  },
+  "empty": {
+    "noResults": "Cap projecte coincideix amb els filtres seleccionats.",
+    "clearFilters": "Netejar filtres"
+  },
+  "aria": {
+    "closeModal": "Tancar detall del projecte",
+    "prevImage": "Imatge anterior",
+    "nextImage": "Imatge següent",
+    "themeToggle": "Canviar mode clar/fosc",
+    "langSelect": "Seleccionar idioma"
+  }
+}
