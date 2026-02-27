@@ -1,6 +1,35 @@
 {
   "projects": [
     {
+      "id": "portfolio",
+      "visible": true,
+      "featured": true,
+      "date": "2026-02-27",
+      "projectLanguages": ["ca", "es", "en"],
+      "title": {
+        "ca": "Portfolio personal",
+        "es": "Portfolio personal",
+        "en": "Personal portfolio"
+      },
+      "shortDescription": {
+        "ca": "Plantilla de portfolio personal estàtic allotjada a GitHub Pages, sense cap dependència externa ni pas de compilació.",
+        "es": "Plantilla de portfolio personal estático alojada en GitHub Pages, sin dependencias externas ni paso de compilación.",
+        "en": "Static personal portfolio template hosted on GitHub Pages, with no external dependencies or build step."
+      },
+      "fullDescription": {
+        "ca": "# Portfolio personal\n\nPortfolio estàtic per mostrar projectes web, apps i MVPs, allotjat a **GitHub Pages**.\n\n## Característiques\n\n- **Zero compilació** — HTML5, CSS3 i Vanilla JS purs, sense frameworks ni npm\n- **Mode fosc per defecte** amb selector mode clar; paleta de tons verds\n- **Interfície multilingüe** — català (per defecte), castellà i anglès\n- **Graella adaptativa** — responsive per a mòbil, tauleta i escriptori\n- **Carrusel d'imatges** a les cards, vista en mosaic al modal de detall\n- **Suport Markdown** a les descripcions completes (via `marked.js` inclòs localment)\n- **Filtres per etiquetes** i per idioma del projecte\n- **Ordre cronològic** — els projectes més recents primer; els destacats floten a dalt\n- **Modal de detall** — descripció completa, mosaic d'imatges amb lightbox, i enllaços\n- **Panel d'administració local** — `admin/index.html` per afegir/editar projectes i exportar JSON\n- **GitHub Actions** — desplegament automàtic a GitHub Pages en fer push a `main`\n- **Cap servei extern** — tot autocontingut al repositori\n\n## Tecnologies\n\n`HTML5` · `CSS3` · `Vanilla JS` · `GitHub Pages` · `GitHub Actions`\n\n## Ús\n\n```bash\n# Servir localment\nnpx serve .\n# Obrir http://localhost:3000\n```\n\n## Afegir un projecte nou\n\n1. Crear carpeta `projects/nom-projecte/img/`\n2. Copiar captures de pantalla (format `.webp` recomanat)\n3. Afegir entrada a `data/projects.json`\n4. `git add . && git commit -m \"feat: add nom-projecte\" && git push`",
+        "es": "# Portfolio personal\n\nPortfolio estático para mostrar proyectos web, apps y MVPs, alojado en **GitHub Pages**.\n\n## Características\n\n- **Zero compilación** — HTML5, CSS3 y Vanilla JS puros, sin frameworks ni npm\n- **Modo oscuro por defecto** con selector modo claro; paleta de tonos verdes\n- **Interfaz multilingüe** — catalán (por defecto), castellano e inglés\n- **Rejilla adaptativa** — responsive para móvil, tableta y escritorio\n- **Carrusel de imágenes** en las cards, vista en mosaico en el modal de detalle\n- **Soporte Markdown** en las descripciones completas (via `marked.js` incluido localmente)\n- **Filtros por etiquetas** y por idioma del proyecto\n- **Orden cronológico** — los proyectos más recientes primero; los destacados flotan arriba\n- **Modal de detalle** — descripción completa, mosaico de imágenes con lightbox, y enlaces\n- **Panel de administración local** — `admin/index.html` para añadir/editar proyectos y exportar JSON\n- **GitHub Actions** — despliegue automático a GitHub Pages al hacer push a `main`\n- **Ningún servicio externo** — todo autocontenido en el repositorio\n\n## Tecnologías\n\n`HTML5` · `CSS3` · `Vanilla JS` · `GitHub Pages` · `GitHub Actions`\n\n## Uso\n\n```bash\n# Servir localmente\nnpx serve .\n# Abrir http://localhost:3000\n```\n\n## Añadir un proyecto nuevo\n\n1. Crear carpeta `projects/nombre-proyecto/img/`\n2. Copiar capturas de pantalla (formato `.webp` recomendado)\n3. Añadir entrada a `data/projects.json`\n4. `git add . && git commit -m \"feat: add nombre-proyecto\" && git push`",
+        "en": "# Personal portfolio\n\nStatic portfolio to showcase web projects, apps and MVPs, hosted on **GitHub Pages**.\n\n## Features\n\n- **Zero build step** — pure HTML5, CSS3 and Vanilla JS, no frameworks, no npm\n- **Dark mode by default** with light mode toggle; green accent palette\n- **Multilingual UI** — Catalan (default), Spanish, English\n- **Adaptive card grid** — responsive layout for mobile, tablet and desktop\n- **Image carousel** in cards, mosaic view in detail modal\n- **Markdown support** in full project descriptions (via bundled `marked.js`)\n- **Tag filters** and project language filters\n- **Chronological order** — newest projects first; featured projects float to top\n- **Detail modal** — full description, image mosaic with lightbox, links to GitHub / demo / docs\n- **Local admin panel** — `admin/index.html` to add/edit projects and export JSON\n- **GitHub Actions** — automatic deployment to GitHub Pages on push to `main`\n- **No external services** — everything self-contained in the repository\n\n## Technologies\n\n`HTML5` · `CSS3` · `Vanilla JS` · `GitHub Pages` · `GitHub Actions`\n\n## Usage\n\n```bash\n# Serve locally\nnpx serve .\n# Open http://localhost:3000\n```\n\n## Adding a new project\n\n1. Create folder `projects/project-name/img/`\n2. Copy screenshots (`.webp` format recommended)\n3. Add entry to `data/projects.json`\n4. `git add . && git commit -m \"feat: add project-name\" && git push`"
+      },
+      "tags": ["web", "tool"],
+      "images": [],
+      "links": {
+        "github": "https://github.com/aaronFortuno/portfolio",
+        "demo": "https://aaronfortuno.github.io/portfolio/",
+        "docs": null
+      }
+    },
+    {
       "id": "example-project",
       "visible": true,
       "featured": true,
