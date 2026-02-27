@@ -1,6 +1,35 @@
 {
   "projects": [
     {
+      "id": "ln-tip-jar",
+      "visible": true,
+      "featured": false,
+      "date": "2026-02-27",
+      "projectLanguages": ["agnostic"],
+      "title": {
+        "ca": "ln-tip-jar",
+        "es": "ln-tip-jar",
+        "en": "ln-tip-jar"
+      },
+      "shortDescription": {
+        "ca": "Web Component reutilitzable per acceptar microdonatius via Lightning Network. Un sol fitxer JS, sense dependències de framework.",
+        "es": "Web Component reutilizable para aceptar microdonativos via Lightning Network. Un solo archivo JS, sin dependencias de framework.",
+        "en": "Reusable Web Component to accept micro-donations via Lightning Network. A single JS file, no framework dependencies."
+      },
+      "fullDescription": {
+        "ca": "# ⚡ ln-tip-jar\n\nWeb Component reutilitzable per acceptar microdonatius via **Lightning Network**. Funciona en HTML estàtic, React, Vue o qualsevol entorn web sense dependències de framework.\n\n## Ús\n\n```html\n<script src=\"ln-tip-jar.js\"></script>\n\n<ln-tip-jar\n  ln-address=\"elteunom@walletofsatoshi.com\"\n  portfolio-url=\"https://elteudomini.com\"\n  portfolio-label=\"Veure més projectes\"\n  hover-text=\"Em convides a un cafè? 😊\"\n  button-position=\"right\"\n></ln-tip-jar>\n```\n\n## Atributs\n\n| Atribut | Descripció | Per defecte |\n|---|---|---|\n| `ln-address` | Lightning Address del destinatari | — |\n| `portfolio-url` | URL de l'enllaç al portfolio | `#` |\n| `portfolio-label` | Text de l'enllaç al portfolio | `Veure més projectes` |\n| `hover-text` | Text que apareix en hover del botó | `Em convides a un cafè? 😊` |\n| `button-position` | Posició del botó: `left` o `right` | `right` |\n\n## Característiques\n\n- **Botó flotant** circular que s'expandeix en hover cap al centre de la pantalla\n- **Modal** amb animació fade-in + scale, ancorat per sobre del botó\n- **QR code** de la Lightning Address (lazy load via CDN, només en obrir el modal)\n- **Copiar al portapapers** amb feedback visual\n- **CSS encapsulat** via Shadow DOM — no interfereix mai amb els estils del projecte hoste\n- **Accessible**: `role=\"dialog\"`, ARIA labels, gestió de focus, tancament amb `Escape`\n- **Sense dependències** de framework — un únic arxiu JS\n\n## Llicència\n\nMIT",
+        "es": "# ⚡ ln-tip-jar\n\nWeb Component reutilizable para aceptar microdonativos via **Lightning Network**. Funciona en HTML estático, React, Vue o cualquier entorno web sin dependencias de framework.\n\n## Uso\n\n```html\n<script src=\"ln-tip-jar.js\"></script>\n\n<ln-tip-jar\n  ln-address=\"tunombre@walletofsatoshi.com\"\n  portfolio-url=\"https://tudominio.com\"\n  portfolio-label=\"Ver más proyectos\"\n  hover-text=\"¿Me invitas a un café? 😊\"\n  button-position=\"right\"\n></ln-tip-jar>\n```\n\n## Atributos\n\n| Atributo | Descripción | Por defecto |\n|---|---|---|\n| `ln-address` | Lightning Address del destinatario | — |\n| `portfolio-url` | URL del enlace al portfolio | `#` |\n| `portfolio-label` | Texto del enlace al portfolio | `Ver más proyectos` |\n| `hover-text` | Texto que aparece en hover del botón | `¿Me invitas a un café? 😊` |\n| `button-position` | Posición del botón: `left` o `right` | `right` |\n\n## Características\n\n- **Botón flotante** circular que se expande en hover hacia el centro de la pantalla\n- **Modal** con animación fade-in + scale, anclado por encima del botón\n- **QR code** de la Lightning Address (lazy load via CDN, solo al abrir el modal)\n- **Copiar al portapapeles** con feedback visual\n- **CSS encapsulado** via Shadow DOM — no interfiere con los estilos del proyecto host\n- **Accesible**: `role=\"dialog\"`, ARIA labels, gestión de foco, cierre con `Escape`\n- **Sin dependencias** de framework — un único archivo JS\n\n## Licencia\n\nMIT",
+        "en": "# ⚡ ln-tip-jar\n\nReusable Web Component to accept micro-donations via **Lightning Network**. Works in static HTML, React, Vue or any web environment with no framework dependencies.\n\n## Usage\n\n```html\n<script src=\"ln-tip-jar.js\"></script>\n\n<ln-tip-jar\n  ln-address=\"yourname@walletofsatoshi.com\"\n  portfolio-url=\"https://yourdomain.com\"\n  portfolio-label=\"See more projects\"\n  hover-text=\"Buy me a coffee? 😊\"\n  button-position=\"right\"\n></ln-tip-jar>\n```\n\n## Attributes\n\n| Attribute | Description | Default |\n|---|---|---|\n| `ln-address` | Recipient's Lightning Address | — |\n| `portfolio-url` | Portfolio link URL | `#` |\n| `portfolio-label` | Portfolio link text | `See more projects` |\n| `hover-text` | Text shown on button hover | `Buy me a coffee? 😊` |\n| `button-position` | Button position: `left` or `right` | `right` |\n\n## Features\n\n- **Floating button** that expands on hover toward the center of the screen\n- **Modal** with fade-in + scale animation, anchored above the button\n- **QR code** for the Lightning Address (lazy load via CDN, only when the modal opens)\n- **Copy to clipboard** with visual feedback\n- **Encapsulated CSS** via Shadow DOM — never interferes with host project styles\n- **Accessible**: `role=\"dialog\"`, ARIA labels, focus management, `Escape` to close\n- **No framework dependencies** — a single JS file\n\n## License\n\nMIT"
+      },
+      "tags": ["web", "tool"],
+      "images": [],
+      "links": {
+        "github": "https://github.com/aaronFortuno/ln-tip-jar",
+        "demo": "https://aaronfortuno.github.io/ln-tip-jar/",
+        "docs": null
+      }
+    },
+    {
       "id": "portfolio",
       "visible": true,
       "featured": true,
