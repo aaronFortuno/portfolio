@@ -1,6 +1,35 @@
 {
   "projects": [
     {
+      "id": "quest-404",
+      "visible": true,
+      "featured": false,
+      "date": "2026-03-02",
+      "projectLanguages": ["ca"],
+      "title": {
+        "ca": "Quest 404: El Tresor del Drac Pagic",
+        "es": "Quest 404: El Tesoro del Dragon Pagico",
+        "en": "Quest 404: The Lazy Dragon's Treasure"
+      },
+      "shortDescription": {
+        "ca": "Joc textual estil \"tria la teva aventura\" amb estetica pixel art anys 80. 7 nodes de decisio, 10 finals (9 desastrosos + 1 exit secret) i humor absurd.",
+        "es": "Juego textual estilo \"elige tu aventura\" con estetica pixel art anos 80. 7 nodos de decision, 10 finales (9 desastrosos + 1 exito secreto) y humor absurdo.",
+        "en": "A \"choose your own adventure\" text game with 80s pixel art aesthetics. 7 decision nodes, 10 endings (9 disastrous + 1 secret success) and absurd humor."
+      },
+      "fullDescription": {
+        "ca": "# Quest 404: El Tresor del Drac Pagic\n\nJoc textual estil \"tria la teva aventura\" amb estetica pixel art anys 80.\n\n## Concepte\n\nEts en **Baldiri**, aventurer de 3a categoria (llicencia caducada), que ha trobat un mapa del tresor en un got de cervesa. El tresor llegendari del Drac Pagic t'espera... o potser no.\n\n**To**: Ironic, absurd i autoparodic. El joc es ria del genere d'aventures i del jugador per igual.\n\n## Caracteristiques\n\n- **Arbre de decisions** amb 7 nodes i 10 finals jugables\n- **Efecte typewriter** amb cursor parpellejant estil terminal\n- **Shader CRT** amb scanlines, vignette i flicker\n- **Audio chiptune** generat proceduralment (8-bit)\n- **Font pixel** Press Start 2P\n- **Navegacio per teclat** (fletxes + Enter) i ratoli\n- **Flash de pantalla** en cada seleccio\n\n## Tecnologies\n\n`Godot 4.6` . `C#` . `.NET 8` . `GLSL Shaders`\n\n## Finals\n\n| # | Nom | Tipus |\n|---|-----|-------|\n| F1 | El Millor Negoci | Desastros |\n| F2 | Proteina Natural | Desastros |\n| F3 | Viral, pero Mort | Desastros |\n| F4 | Carrera Academica | Desastros |\n| F5 | Drama Familiar | Desastros |\n| F6 | Sospitos Habitual | Desastros |\n| F7 | Derrota Democratica | Desastros |\n| F8 | Error de Diagnostic | Desastros |\n| F9 | Menu Degustacio | Desastros |\n| F10 | Contra Tot Pronostic | EXIT! |",
+        "es": "# Quest 404: El Tesoro del Dragon Pagico\n\nJuego textual estilo \"elige tu aventura\" con estetica pixel art anos 80.\n\n## Concepto\n\nEres **Baldiri**, aventurero de 3a categoria (licencia caducada), que ha encontrado un mapa del tesoro en un vaso de cerveza. El tesoro legendario del Dragon Pagico te espera... o quiza no.\n\n**Tono**: Ironico, absurdo y autoparodico. El juego se rie del genero de aventuras y del jugador por igual.\n\n## Caracteristicas\n\n- **Arbol de decisiones** con 7 nodos y 10 finales jugables\n- **Efecto typewriter** con cursor parpadeante estilo terminal\n- **Shader CRT** con scanlines, vineta y flicker\n- **Audio chiptune** generado proceduralmente (8-bit)\n- **Fuente pixel** Press Start 2P\n- **Navegacion por teclado** (flechas + Enter) y raton\n- **Flash de pantalla** en cada seleccion\n\n## Tecnologias\n\n`Godot 4.6` . `C#` . `.NET 8` . `GLSL Shaders`\n\n## Finales\n\n| # | Nombre | Tipo |\n|---|-----|-------|\n| F1 | El Mejor Negocio | Desastroso |\n| F2 | Proteina Natural | Desastroso |\n| F3 | Viral, pero Muerto | Desastroso |\n| F4 | Carrera Academica | Desastroso |\n| F5 | Drama Familiar | Desastroso |\n| F6 | Sospechoso Habitual | Desastroso |\n| F7 | Derrota Democratica | Desastroso |\n| F8 | Error de Diagnostico | Desastroso |\n| F9 | Menu Degustacion | Desastroso |\n| F10 | Contra Todo Pronostico | EXITO! |",
+        "en": "# Quest 404: The Lazy Dragon's Treasure\n\nA \"choose your own adventure\" text game with 80s pixel art aesthetics.\n\n## Concept\n\nYou are **Baldiri**, a 3rd-class adventurer (expired license), who found a treasure map on a beer napkin. The legendary treasure of the Lazy Dragon awaits... or maybe not.\n\n**Tone**: Ironic, absurd and self-parodying. The game mocks the adventure genre and the player alike.\n\n## Features\n\n- **Decision tree** with 7 nodes and 10 playable endings\n- **Typewriter effect** with blinking cursor, terminal style\n- **CRT shader** with scanlines, vignette and flicker\n- **Chiptune audio** procedurally generated (8-bit)\n- **Pixel font** Press Start 2P\n- **Keyboard navigation** (arrows + Enter) and mouse\n- **Screen flash** on each selection\n\n## Technologies\n\n`Godot 4.6` . `C#` . `.NET 8` . `GLSL Shaders`\n\n## Endings\n\n| # | Name | Type |\n|---|-----|-------|\n| F1 | The Best Deal | Disastrous |\n| F2 | Natural Protein | Disastrous |\n| F3 | Viral, but Dead | Disastrous |\n| F4 | Academic Career | Disastrous |\n| F5 | Family Drama | Disastrous |\n| F6 | Usual Suspect | Disastrous |\n| F7 | Democratic Defeat | Disastrous |\n| F8 | Misdiagnosis | Disastrous |\n| F9 | Tasting Menu | Disastrous |\n| F10 | Against All Odds | SUCCESS! |"
+      },
+      "tags": ["game", "experiment"],
+      "images": [],
+      "links": {
+        "github": "https://github.com/aaronFortuno/quest-404",
+        "demo": null,
+        "docs": null
+      }
+    },
+    {
       "id": "ln-tip-jar",
       "visible": true,
       "featured": false,
