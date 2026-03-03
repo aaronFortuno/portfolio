@@ -1,6 +1,37 @@
 {
   "projects": [
     {
+      "id": "calc-o-matic",
+      "visible": true,
+      "featured": false,
+      "date": "2026-03-03",
+      "projectLanguages": ["agnostic"],
+      "title": {
+        "ca": "calc-o-matic",
+        "es": "calc-o-matic",
+        "en": "calc-o-matic"
+      },
+      "shortDescription": {
+        "ca": "Joc de fabrica matematica: connecta extractors, cintes transportadores i operadors per resoldre puzles numerics amb progressio i tutorials.",
+        "es": "Juego de fabrica matematica: conecta extractores, cintas transportadoras y operadores para resolver puzzles numericos con progresion y tutoriales.",
+        "en": "Math factory puzzle game: connect extractors, conveyor belts and operators to solve number puzzles with progression and tutorials."
+      },
+      "fullDescription": {
+        "ca": "# calc-o-matic\n\nJoc de puzles matematics estil factory-builder per a navegador web.\n\nConstrueix linies de produccio que processen nombres: encamina tokens a traves d'operadors matematics per assolir el valor objectiu al receptor.\n\n## Caracteristiques\n\n- **6 tutorials** guiats per aprendre les mecaniques basiques\n- **11 operadors** matematics: suma, resta, multiplicacio, divisio, potencia, modul, MCD, quadrat, arrel quadrada, factor i es primer?\n- **Generador procedural** de nivells amb 5 graus de dificultat i plantilles variades\n- **Animacions suaus**: tokens amb interpolacio, cintes transportadores animades amb corbes en L\n- **Sistema de progressio**: XP, nivells i desbloqueig d'operadors\n- **Canvas HTML5**: renderitzat complet amb grid infinit, zoom i pan (teclat, ratolí, middle-click)\n- **Panel d'administracio**: generador de nivells, importacio/exportacio JSON, slots de guardat\n- **142 tests** amb Vitest\n\n## Tecnologies\n\n`React 18` . `TypeScript` . `Vite` . `Tailwind CSS` . `Zustand` . `i18next` . `HTML5 Canvas` . `Vitest` . `GitHub Pages`",
+        "es": "# calc-o-matic\n\nJuego de puzzles matematicos estilo factory-builder para navegador web.\n\nConstruye lineas de produccion que procesan numeros: encamina tokens a traves de operadores matematicos para alcanzar el valor objetivo en el receptor.\n\n## Caracteristicas\n\n- **6 tutoriales** guiados para aprender las mecanicas basicas\n- **11 operadores** matematicos: suma, resta, multiplicacion, division, potencia, modulo, MCD, cuadrado, raiz cuadrada, factor y es primo?\n- **Generador procedural** de niveles con 5 grados de dificultad y plantillas variadas\n- **Animaciones suaves**: tokens con interpolacion, cintas transportadoras animadas con curvas en L\n- **Sistema de progresion**: XP, niveles y desbloqueo de operadores\n- **Canvas HTML5**: renderizado completo con grid infinito, zoom y pan (teclado, raton, middle-click)\n- **Panel de administracion**: generador de niveles, importacion/exportacion JSON, slots de guardado\n- **142 tests** con Vitest\n\n## Tecnologias\n\n`React 18` . `TypeScript` . `Vite` . `Tailwind CSS` . `Zustand` . `i18next` . `HTML5 Canvas` . `Vitest` . `GitHub Pages`",
+        "en": "# calc-o-matic\n\nMath puzzle game with factory-builder mechanics for the web browser.\n\nBuild production lines that process numbers: route tokens through math operators to hit the target value at the receiver.\n\n## Features\n\n- **6 guided tutorials** to learn the basic mechanics\n- **11 math operators**: add, subtract, multiply, divide, power, modulo, GCD, square, square root, factor and is prime?\n- **Procedural level generator** with 5 difficulty tiers and varied templates\n- **Smooth animations**: token interpolation, animated conveyor belts with L-shaped corners\n- **Progression system**: XP, levels and operator unlocks\n- **HTML5 Canvas**: full rendering with infinite grid, zoom and pan (keyboard, mouse, middle-click drag)\n- **Admin panel**: level generator, JSON import/export, save slots\n- **142 tests** with Vitest\n\n## Technologies\n\n`React 18` . `TypeScript` . `Vite` . `Tailwind CSS` . `Zustand` . `i18next` . `HTML5 Canvas` . `Vitest` . `GitHub Pages`"
+      },
+      "tags": ["web", "game", "education"],
+      "images": [
+        "projects/calc-o-matic/img/calc-o-matic-01.webp"
+      ],
+      "links": {
+        "github": "https://github.com/aaronFortuno/calc-o-matic",
+        "demo": "https://aaronfortuno.github.io/calc-o-matic/",
+        "docs": null
+      }
+    },
+    {
       "id": "speeedr",
       "visible": true,
       "featured": false,
