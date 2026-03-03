@@ -1,6 +1,35 @@
 {
   "projects": [
     {
+      "id": "gramaticat",
+      "visible": true,
+      "featured": false,
+      "date": "2026-03-03",
+      "projectLanguages": ["ca"],
+      "title": {
+        "ca": "gramatiCat",
+        "es": "gramatiCat",
+        "en": "gramatiCat"
+      },
+      "shortDescription": {
+        "ca": "Aplicacio web interactiva de practica de llengua catalana per a alumnes de Cicle Superior i ESO. Exercicis gamificats amb ratxes, medalles i estadistiques.",
+        "es": "Aplicacion web interactiva de practica de lengua catalana para alumnos de Ciclo Superior y ESO. Ejercicios gamificados con rachas, medallas y estadisticas.",
+        "en": "Interactive Catalan language practice web app for upper primary and secondary school students. Gamified exercises with streaks, medals and statistics."
+      },
+      "fullDescription": {
+        "ca": "# gramatiCat\n\nAplicacio web de practica de llengua catalana per a alumnes de Cicle Superior de Primaria i ESO.\n\ngramatiCat es una eina educativa interactiva que permet als alumnes practicar gramatica, ortografia, lexic i sintaxi catalana de manera autonoma i gamificada.\n\n## Caracteristiques\n\n- **4 categories**: Gramatica, Ortografia, Lexic i Sintaxi\n- **4 tipus d'exercicis**: multi-opcio, omplir buits, arrossegar i classificar, classificacio de paraules\n- **Gamificacio**: ratxes de respostes correctes, temporitzador i medalles (bronze, plata, or + especials)\n- **Estadistiques locals**: percentatge d'encerts per categoria, evolucio temporal i mapa d'activitat\n- **Admin Previewer**: previsualitza exercicis JSON abans d'afegir-los al repositori\n- **Sense servidor**: funciona completament a GitHub Pages amb localStorage\n\n## Tecnologies\n\n`React 19` . `TypeScript` . `Vite` . `Tailwind CSS v4` . `React Router v7` . `@dnd-kit` . `Recharts`\n\n## Instal-lacio local\n\n```bash\ngit clone https://github.com/aaronFortuno/gramatiCat.git\ncd gramatiCat\nnpm install\nnpm run dev\nnpm run test\n```\n\n## Afegir exercicis\n\nEls exercicis son fitxers JSON dins de `public/exercicis/{categoria}/{tema}/`. Utilitza l'Admin Previewer (`#/admin`) per validar-los abans de fer commit.",
+        "es": "# gramatiCat\n\nAplicacion web de practica de lengua catalana para alumnos de Ciclo Superior de Primaria y ESO.\n\ngramatiCat es una herramienta educativa interactiva que permite a los alumnos practicar gramatica, ortografia, lexico y sintaxis catalana de manera autonoma y gamificada.\n\n## Caracteristicas\n\n- **4 categorias**: Gramatica, Ortografia, Lexico y Sintaxis\n- **4 tipos de ejercicios**: multi-opcion, rellenar huecos, arrastrar y clasificar, clasificacion de palabras\n- **Gamificacion**: rachas de respuestas correctas, temporizador y medallas (bronce, plata, oro + especiales)\n- **Estadisticas locales**: porcentaje de aciertos por categoria, evolucion temporal y mapa de actividad\n- **Admin Previewer**: previsualiza ejercicios JSON antes de anadirlos al repositorio\n- **Sin servidor**: funciona completamente en GitHub Pages con localStorage\n\n## Tecnologias\n\n`React 19` . `TypeScript` . `Vite` . `Tailwind CSS v4` . `React Router v7` . `@dnd-kit` . `Recharts`\n\n## Instalacion local\n\n```bash\ngit clone https://github.com/aaronFortuno/gramatiCat.git\ncd gramatiCat\nnpm install\nnpm run dev\nnpm run test\n```\n\n## Anadir ejercicios\n\nLos ejercicios son ficheros JSON dentro de `public/exercicis/{categoria}/{tema}/`. Utiliza el Admin Previewer (`#/admin`) para validarlos antes de hacer commit.",
+        "en": "# gramatiCat\n\nCatalan language practice web app for upper primary and secondary school students.\n\ngramatiCat is an interactive educational tool that lets students practice Catalan grammar, spelling, vocabulary and syntax autonomously with gamification elements.\n\n## Features\n\n- **4 categories**: Grammar, Spelling, Vocabulary and Syntax\n- **4 exercise types**: multiple choice, fill in the blank, drag and drop, word classification\n- **Gamification**: correct answer streaks, timer and medals (bronze, silver, gold + specials)\n- **Local statistics**: accuracy percentage per category, time evolution and activity heatmap\n- **Admin Previewer**: preview exercise JSON files before adding them to the repository\n- **Serverless**: runs entirely on GitHub Pages with localStorage\n\n## Technologies\n\n`React 19` . `TypeScript` . `Vite` . `Tailwind CSS v4` . `React Router v7` . `@dnd-kit` . `Recharts`\n\n## Local setup\n\n```bash\ngit clone https://github.com/aaronFortuno/gramatiCat.git\ncd gramatiCat\nnpm install\nnpm run dev\nnpm run test\n```\n\n## Adding exercises\n\nExercises are JSON files inside `public/exercicis/{category}/{topic}/`. Use the Admin Previewer (`#/admin`) to validate them before committing."
+      },
+      "tags": ["web", "education"],
+      "images": [],
+      "links": {
+        "github": "https://github.com/aaronFortuno/gramatiCat",
+        "demo": "https://aaronfortuno.github.io/gramatiCat/",
+        "docs": null
+      }
+    },
+    {
       "id": "quest-404",
       "visible": true,
       "featured": false,
