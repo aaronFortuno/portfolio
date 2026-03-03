@@ -1,6 +1,37 @@
 {
   "projects": [
     {
+      "id": "speeedr",
+      "visible": true,
+      "featured": false,
+      "date": "2026-02-03",
+      "projectLanguages": ["ca", "es", "en"],
+      "title": {
+        "ca": "Speeedr",
+        "es": "Speeedr",
+        "en": "Speeedr"
+      },
+      "shortDescription": {
+        "ca": "Eina de lectura rapida personalitzable per entrenar la velocitat lectora amb acceleracio progressiva i control de PPM.",
+        "es": "Herramienta de lectura rapida personalizable para entrenar la velocidad lectora con aceleracion progresiva y control de PPM.",
+        "en": "A simple but customizable speed reading tool to train reading velocity with progressive acceleration and PPM control."
+      },
+      "fullDescription": {
+        "ca": "# Speeedr\n\nEina web de lectura rapida senzilla pero personalitzable.\n\n## Caracteristiques\n\n- **Entrada de text lliure** o seleccio de textos d'exemple\n- **Velocitat inicial i objectiu** configurables en paraules per minut (PPM)\n- **Acceleracio progressiva** amb duracio en segons ajustable\n- **Comptador de paraules** automatic\n- **Mida de text ajustable** (A+ / A-)\n- **Interficie multilingue** (catala, castella, angles)\n- **Sense dependencies** — HTML, CSS i JavaScript vanilla\n\n## Tecnologies\n\n`HTML5` . `CSS3` . `JavaScript vanilla` . `i18n` . `GitHub Pages`",
+        "es": "# Speeedr\n\nHerramienta web de lectura rapida sencilla pero personalizable.\n\n## Caracteristicas\n\n- **Entrada de texto libre** o seleccion de textos de ejemplo\n- **Velocidad inicial y objetivo** configurables en palabras por minuto (PPM)\n- **Aceleracion progresiva** con duracion en segundos ajustable\n- **Contador de palabras** automatico\n- **Tamano de texto ajustable** (A+ / A-)\n- **Interfaz multilingue** (catalan, castellano, ingles)\n- **Sin dependencias** — HTML, CSS y JavaScript vanilla\n\n## Tecnologias\n\n`HTML5` . `CSS3` . `JavaScript vanilla` . `i18n` . `GitHub Pages`",
+        "en": "# Speeedr\n\nA simple but customizable speed reading web tool.\n\n## Features\n\n- **Free text input** or sample text selection\n- **Initial and target speed** configurable in words per minute (PPM)\n- **Progressive acceleration** with adjustable duration in seconds\n- **Automatic word counter**\n- **Adjustable text size** (A+ / A-)\n- **Multilingual interface** (Catalan, Spanish, English)\n- **No dependencies** — HTML, CSS and vanilla JavaScript\n\n## Technologies\n\n`HTML5` . `CSS3` . `Vanilla JavaScript` . `i18n` . `GitHub Pages`"
+      },
+      "tags": ["web", "tool"],
+      "images": [
+        "projects/speeedr/img/speeedr-01.webp"
+      ],
+      "links": {
+        "github": "https://github.com/aaronFortuno/speeedr",
+        "demo": "https://aaronfortuno.github.io/speeedr/",
+        "docs": null
+      }
+    },
+    {
       "id": "gramaticat",
       "visible": true,
       "featured": false,
