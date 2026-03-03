@@ -1,6 +1,37 @@
 {
   "projects": [
     {
+      "id": "caicul",
+      "visible": true,
+      "featured": false,
+      "date": "2026-03-03",
+      "projectLanguages": ["ca", "es", "en"],
+      "title": {
+        "ca": "cAIcul",
+        "es": "cAIcul",
+        "en": "cAIcul"
+      },
+      "shortDescription": {
+        "ca": "Aplicacio interactiva de resolucio de problemes matematics amb assistencia d'IA (Gemini). Problemes contextualitzats per nivells, calculadora integrada i validacio automatica.",
+        "es": "Aplicacion interactiva de resolucion de problemas matematicos con asistencia de IA (Gemini). Problemas contextualizados por niveles, calculadora integrada y validacion automatica.",
+        "en": "Interactive math problem-solving app with AI assistance (Gemini). Contextualised problems by grade level, built-in calculator and automatic validation."
+      },
+      "fullDescription": {
+        "ca": "# cAIcul\n\nAplicacio interactiva per a la resolucio de problemes matematics contextualitzats amb assistencia d'IA.\n\nEls alumnes trien un nivell (Cicle Mitja, Cicle Superior, 1r ESO, 2n ESO), reben un problema contextualitzat i han d'identificar les dades, escriure les operacions i donar la resposta. La IA (Gemini) valida la solucio i dona feedback detallat.\n\n## Caracteristiques\n\n- **4 nivells educatius**: Cicle Mitja i Superior de Primaria, 1r i 2n Cicle d'ESO\n- **Validacio amb IA**: Gemini analitza dades, operacions i resposta per separat\n- **Feedback detallat**: explicacio punt per punt de que esta be i que cal millorar\n- **Calculadora integrada** per fer operacions sense sortir de l'app\n- **Interficie multilingue**: catala, castella i angles\n- **Mode clar / fosc** amb transicio suau\n- **Estadistiques**: comptador de problemes resolts i ratxa de respostes correctes\n- **Disseny responsive** amb Tailwind CSS\n\n## Tecnologies\n\n`React 19` . `TypeScript` . `Vite` . `Tailwind CSS` . `Gemini API` . `Google Cloud Run`",
+        "es": "# cAIcul\n\nAplicacion interactiva para la resolucion de problemas matematicos contextualizados con asistencia de IA.\n\nLos alumnos eligen un nivel (Ciclo Medio, Ciclo Superior, 1o ESO, 2o ESO), reciben un problema contextualizado y deben identificar los datos, escribir las operaciones y dar la respuesta. La IA (Gemini) valida la solucion y da feedback detallado.\n\n## Caracteristicas\n\n- **4 niveles educativos**: Ciclo Medio y Superior de Primaria, 1o y 2o Ciclo de ESO\n- **Validacion con IA**: Gemini analiza datos, operaciones y respuesta por separado\n- **Feedback detallado**: explicacion punto por punto de que esta bien y que hay que mejorar\n- **Calculadora integrada** para hacer operaciones sin salir de la app\n- **Interfaz multilingue**: catalan, castellano e ingles\n- **Modo claro / oscuro** con transicion suave\n- **Estadisticas**: contador de problemas resueltos y racha de respuestas correctas\n- **Diseno responsive** con Tailwind CSS\n\n## Tecnologias\n\n`React 19` . `TypeScript` . `Vite` . `Tailwind CSS` . `Gemini API` . `Google Cloud Run`",
+        "en": "# cAIcul\n\nInteractive app for solving contextualised math problems with AI assistance.\n\nStudents choose a level (3rd-4th grade, 5th-6th grade, Middle School 1, Middle School 2), receive a contextualised problem and must identify the data, write the operations and give the answer. The AI (Gemini) validates the solution and provides detailed feedback.\n\n## Features\n\n- **4 educational levels**: 3rd-4th and 5th-6th grade, Middle School 1 and 2\n- **AI validation**: Gemini analyses data, operations and answer separately\n- **Detailed feedback**: point-by-point explanation of what is correct and what needs improvement\n- **Built-in calculator** to perform operations without leaving the app\n- **Multilingual interface**: Catalan, Spanish and English\n- **Light / dark mode** with smooth transition\n- **Statistics**: solved problems counter and correct answer streak\n- **Responsive design** with Tailwind CSS\n\n## Technologies\n\n`React 19` . `TypeScript` . `Vite` . `Tailwind CSS` . `Gemini API` . `Google Cloud Run`"
+      },
+      "tags": ["web", "education"],
+      "images": [
+        "projects/caicul/img/caicul-01.webp"
+      ],
+      "links": {
+        "github": "https://github.com/aaronFortuno/cAIcul",
+        "demo": "https://caicul-855528237431.us-west1.run.app/",
+        "docs": null
+      }
+    },
+    {
       "id": "calc-o-matic",
       "visible": true,
       "featured": false,
