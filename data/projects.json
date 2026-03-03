@@ -119,7 +119,10 @@
         "en": "# Personal portfolio\n\nStatic portfolio to showcase web projects, apps and MVPs, hosted on **GitHub Pages**.\n\n## Features\n\n- **Zero build step** — pure HTML5, CSS3 and Vanilla JS, no frameworks, no npm\n- **Dark mode by default** with light mode toggle; green accent palette\n- **Multilingual UI** — Catalan (default), Spanish, English\n- **Adaptive card grid** — responsive layout for mobile, tablet and desktop\n- **Image carousel** in cards, mosaic view in detail modal\n- **Markdown support** in full project descriptions (via bundled `marked.js`)\n- **Tag filters** and project language filters\n- **Chronological order** — newest projects first; featured projects float to top\n- **Detail modal** — full description, image mosaic with lightbox, links to GitHub / demo / docs\n- **Local admin panel** — `admin/index.html` to add/edit projects and export JSON\n- **GitHub Actions** — automatic deployment to GitHub Pages on push to `main`\n- **No external services** — everything self-contained in the repository\n\n## Technologies\n\n`HTML5` · `CSS3` · `Vanilla JS` · `GitHub Pages` · `GitHub Actions`\n\n## Usage\n\n```bash\n# Serve locally\nnpx serve .\n# Open http://localhost:3000\n```\n\n## Adding a new project\n\n1. Create folder `projects/project-name/img/`\n2. Copy screenshots (`.webp` format recommended)\n3. Add entry to `data/projects.json`\n4. `git add . && git commit -m \"feat: add project-name\" && git push`"
       },
       "tags": ["web", "tool"],
-      "images": [],
+      "images": [
+        "projects/portfolio/img/portfolio-01.webp",
+        "projects/portfolio/img/portfolio-mobile-01.webp"
+      ],
       "links": {
         "github": "https://github.com/aaronFortuno/portfolio",
         "demo": "https://aaronfortuno.github.io/portfolio/",
