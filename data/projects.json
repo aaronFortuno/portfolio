@@ -22,7 +22,13 @@
         "en": "# gramatiCat\n\nCatalan language practice web app for upper primary and secondary school students.\n\ngramatiCat is an interactive educational tool that lets students practice Catalan grammar, spelling, vocabulary and syntax autonomously with gamification elements.\n\n## Features\n\n- **4 categories**: Grammar, Spelling, Vocabulary and Syntax\n- **4 exercise types**: multiple choice, fill in the blank, drag and drop, word classification\n- **Gamification**: correct answer streaks, timer and medals (bronze, silver, gold + specials)\n- **Local statistics**: accuracy percentage per category, time evolution and activity heatmap\n- **Admin Previewer**: preview exercise JSON files before adding them to the repository\n- **Serverless**: runs entirely on GitHub Pages with localStorage\n\n## Technologies\n\n`React 19` . `TypeScript` . `Vite` . `Tailwind CSS v4` . `React Router v7` . `@dnd-kit` . `Recharts`\n\n## Local setup\n\n```bash\ngit clone https://github.com/aaronFortuno/gramatiCat.git\ncd gramatiCat\nnpm install\nnpm run dev\nnpm run test\n```\n\n## Adding exercises\n\nExercises are JSON files inside `public/exercicis/{category}/{topic}/`. Use the Admin Previewer (`#/admin`) to validate them before committing."
       },
       "tags": ["web", "education"],
-      "images": [],
+      "images": [
+        "projects/gramaticat/img/gramaticat-01.webp",
+        "projects/gramaticat/img/gramaticat-02.webp",
+        "projects/gramaticat/img/gramaticat-03.webp",
+        "projects/gramaticat/img/gramaticat-04.webp",
+        "projects/gramaticat/img/gramaticat-05.webp"
+      ],
       "links": {
         "github": "https://github.com/aaronFortuno/gramatiCat",
         "demo": "https://aaronfortuno.github.io/gramatiCat/",
