@@ -150,7 +150,12 @@
         "en": "# Retro Text Adventures\n\nA 70s-80s style text adventure engine for the web browser.\n\nChoose your adventure, make decisions and discover absurd, tragic or — with a lot of luck — victorious endings.\n\n## Features\n\n- **Retro CRT aesthetics** with pixel font, scanlines, vignette and flicker\n- **Configurable typewriter effect** (text letter by letter with blinking cursor)\n- **Multiple independent adventures** loaded from JSON files\n- **Light / dark mode** and font size selector (3 sizes)\n- **Procedurally generated chiptune music** (5 tracks: menu, adventure, tension, victory, death)\n- **8-bit sound effects** for selection, victory and defeat\n- **Modular architecture**: generic engine separating logic, UI and narrative content\n- **No database** or user data storage\n\n## Included adventure: Quest 404\n\nYou are **Baldiri**, a 3rd-class adventurer (expired license), who found a treasure map on a beer napkin. 7 decision nodes, 10 endings (9 disastrous + 1 success).\n\n## Technologies\n\n`HTML5` . `CSS3` . `Vanilla JavaScript (ES6+)` . `GitHub Pages` . `Python (audio generator)`\n\n## Adding new adventures\n\n1. Create a JSON file in `stories/` following the documented format\n2. Register the adventure in the manifest `stories/manifest.json`\n3. The adventure automatically appears in the selection menu"
       },
       "tags": ["web", "game", "experiment"],
-      "images": [],
+      "images": [
+        "projects/repte-acceptat/img/repte-acceptat-01.webp",
+        "projects/repte-acceptat/img/repte-acceptat-02.webp",
+        "projects/repte-acceptat/img/repte-acceptat-03.webp",
+        "projects/repte-acceptat/img/repte-acceptat-04.webp"
+      ],
       "links": {
         "github": "https://github.com/aaronFortuno/repte-acceptat",
         "demo": "https://aaronfortuno.github.io/repte-acceptat/",
