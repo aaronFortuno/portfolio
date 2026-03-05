@@ -151,12 +151,107 @@ img, svg {
   line-height: 2;
 }
 
+.footer-v4v {
+  max-width: 480px;
+  margin: 0 auto 1.25rem;
+  padding: 0.75rem 1.25rem;
+  background: var(--accent-glow);
+  border: 1px solid var(--accent);
+  border-radius: var(--radius-sm);
+}
+
+.footer-v4v-text {
+  font-size: 0.82rem;
+  line-height: 1.6;
+  color: var(--accent);
+  font-weight: 500;
+}
+
 .site-footer a {
   color: var(--text-muted);
   text-decoration: underline;
   text-underline-offset: 3px;
 }
 .site-footer a:hover { color: var(--accent); }
+
+/* ── About section ── */
+.about-section {
+  margin-bottom: 1.5rem;
+}
+
+.about-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 0.4rem 0.8rem;
+  color: var(--text-muted);
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition);
+}
+
+.about-toggle:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.about-toggle[aria-expanded="true"] {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.about-toggle-icon {
+  transition: transform var(--transition);
+}
+
+.about-toggle[aria-expanded="true"] .about-toggle-icon {
+  transform: rotate(180deg);
+}
+
+.about-content {
+  margin-top: 1rem;
+  padding: 1.25rem 1.5rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  animation: aboutIn 0.3s ease both;
+}
+
+@keyframes aboutIn {
+  from { opacity: 0; transform: translateY(-8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.about-text {
+  font-size: 0.88rem;
+  line-height: 1.7;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.about-text p {
+  margin-bottom: 0.6rem;
+}
+
+.about-text strong {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.about-v4v {
+  font-size: 0.82rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+  padding: 0.75rem 1rem;
+  background: var(--accent-glow);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
 
 /* ── Section title ── */
 .section-header {

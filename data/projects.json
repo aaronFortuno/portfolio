@@ -1,7 +1,34 @@
 {
   "projects": [
     {
+      "id": "jardi-digital",
+      "type": "note",
+      "visible": true,
+      "featured": false,
+      "date": "2026-03-05",
+      "projectLanguages": ["ca", "es", "en"],
+      "title": {
+        "ca": "El portfolio es converteix en jardí digital",
+        "es": "El portfolio se convierte en jardín digital",
+        "en": "The portfolio becomes a digital garden"
+      },
+      "shortDescription": {
+        "ca": "Avui el portfolio deixa de ser un catàleg fred de projectes. Ara és un espai on conviuen projectes i reflexions, amb una filosofia clara: tot obert, tot gratuït, valor per valor.",
+        "es": "Hoy el portfolio deja de ser un catálogo frío de proyectos. Ahora es un espacio donde conviven proyectos y reflexiones, con una filosofía clara: todo abierto, todo gratuito, valor por valor.",
+        "en": "Today the portfolio stops being a cold project catalogue. It's now a space where projects and reflections coexist, with a clear philosophy: everything open, everything free, value for value."
+      },
+      "fullDescription": {
+        "ca": "# El portfolio es converteix en jardí digital\n\nFins avui, aquest portfolio era un escaparat tècnic: fitxes de projecte amb captures de pantalla, tecnologies i enllaços. Funcional, sí. Però fred. Sense ànima.\n\n## Què ha canviat?\n\nA partir d'ara, el portfolio és un **jardí digital**: un espai on els projectes conviuen amb reflexions, aprenentatges i notes personals. Tot barrejat cronològicament en un sol feed, sense seccions artificials.\n\nEls canvis tècnics són senzills però significatius:\n\n- **Nou tipus d'entrada: notes** — targetes visuals diferenciades (amb borde verd, sense carrusel) que contenen reflexions en Markdown\n- **Secció \"Qui sóc\"** — un parell de paràgrafs que expliquen qui hi ha darrere dels projectes\n- **Missatge V4V visible** — perquè la gent entengui la filosofia abans de decidir si vol contribuir\n- **Projectes relacionats** — les notes poden enllaçar als projectes de què parlen\n\n## Per què?\n\nPerquè el codi obert és el *què*, però falta el *per què*. Qualsevol pot veure el codi d'una app educativa, però el que li dona valor real és saber com s'ha usat a l'aula, què han dit els alumnes, quins problemes han sorgit i com s'han resolt.\n\n## Valor per Valor (V4V)\n\nTot el que trobareu aquí és i seguirà sent **gratuït i de codi obert**. No hi ha murs de pagament, no hi ha publicitat, no hi ha seguiment.\n\nEl model és simple: si alguna cosa us resulta útil — una app, una reflexió, una idea — i voleu donar suport al projecte, podeu fer-ho amb una microdonació Lightning Network. No és una obligació, és una invitació.\n\nAquesta filosofia es diu **Value for Value**: cadascú decideix lliurement quant val el que ha rebut. Pot ser zero, pot ser un cafè, pot ser un gràcies. Tot compta.\n\n## I ara?\n\nA partir d'aquí, aniré intercalant notes amb projectes. Experiències d'aula, decisions de disseny, errors comesos, coses apreses. Un jardí que creix orgànicament, sense calendari editorial ni pressió de publicació.",
+        "es": "# El portfolio se convierte en jardín digital\n\nHasta hoy, este portfolio era un escaparate técnico: fichas de proyecto con capturas de pantalla, tecnologías y enlaces. Funcional, sí. Pero frío. Sin alma.\n\n## ¿Qué ha cambiado?\n\nA partir de ahora, el portfolio es un **jardín digital**: un espacio donde los proyectos conviven con reflexiones, aprendizajes y notas personales. Todo mezclado cronológicamente en un solo feed, sin secciones artificiales.\n\nLos cambios técnicos son sencillos pero significativos:\n\n- **Nuevo tipo de entrada: notas** — tarjetas visualmente diferenciadas (con borde verde, sin carrusel) que contienen reflexiones en Markdown\n- **Sección \"Quién soy\"** — un par de párrafos que explican quién hay detrás de los proyectos\n- **Mensaje V4V visible** — para que la gente entienda la filosofía antes de decidir si quiere contribuir\n- **Proyectos relacionados** — las notas pueden enlazar a los proyectos de los que hablan\n\n## ¿Por qué?\n\nPorque el código abierto es el *qué*, pero falta el *por qué*. Cualquiera puede ver el código de una app educativa, pero lo que le da valor real es saber cómo se ha usado en el aula, qué han dicho los alumnos, qué problemas han surgido y cómo se han resuelto.\n\n## Valor por Valor (V4V)\n\nTodo lo que encontraréis aquí es y seguirá siendo **gratuito y de código abierto**. No hay muros de pago, no hay publicidad, no hay seguimiento.\n\nEl modelo es simple: si algo os resulta útil — una app, una reflexión, una idea — y queréis apoyar el proyecto, podéis hacerlo con una microdonación Lightning Network. No es una obligación, es una invitación.\n\nEsta filosofía se llama **Value for Value**: cada uno decide libremente cuánto vale lo que ha recibido. Puede ser cero, puede ser un café, puede ser un gracias. Todo cuenta.\n\n## ¿Y ahora?\n\nA partir de aquí, iré intercalando notas con proyectos. Experiencias de aula, decisiones de diseño, errores cometidos, cosas aprendidas. Un jardín que crece orgánicamente, sin calendario editorial ni presión de publicación.",
+        "en": "# The portfolio becomes a digital garden\n\nUntil today, this portfolio was a technical showcase: project cards with screenshots, technologies and links. Functional, yes. But cold. Soulless.\n\n## What changed?\n\nFrom now on, the portfolio is a **digital garden**: a space where projects coexist with reflections, learnings and personal notes. Everything mixed chronologically in a single feed, no artificial sections.\n\nThe technical changes are simple but meaningful:\n\n- **New entry type: notes** — visually distinct cards (with green accent border, no carousel) containing Markdown reflections\n- **\"About me\" section** — a couple of paragraphs explaining who's behind the projects\n- **Visible V4V message** — so people understand the philosophy before deciding whether to contribute\n- **Related projects** — notes can link to the projects they discuss\n\n## Why?\n\nBecause open source is the *what*, but the *why* is missing. Anyone can see the code of an educational app, but what gives it real value is knowing how it was used in the classroom, what the students said, what problems came up and how they were solved.\n\n## Value for Value (V4V)\n\nEverything you'll find here is and will remain **free and open source**. No paywalls, no ads, no tracking.\n\nThe model is simple: if something is useful to you — an app, a reflection, an idea — and you want to support the project, you can do so with a Lightning Network micro-donation. It's not an obligation, it's an invitation.\n\nThis philosophy is called **Value for Value**: everyone freely decides how much what they received is worth. It can be zero, it can be a coffee, it can be a thank you. Everything counts.\n\n## What now?\n\nFrom here on, I'll be mixing notes with projects. Classroom experiences, design decisions, mistakes made, lessons learned. A garden that grows organically, with no editorial calendar or publishing pressure."
+      },
+      "tags": ["reflection"],
+      "images": [],
+      "relatedProjects": ["portfolio"]
+    },
+    {
       "id": "caicul",
+      "type": "project",
       "visible": true,
       "featured": false,
       "date": "2026-03-03",
@@ -33,6 +60,7 @@
     },
     {
       "id": "calc-o-matic",
+      "type": "project",
       "visible": true,
       "featured": false,
       "date": "2026-03-03",
@@ -64,6 +92,7 @@
     },
     {
       "id": "speeedr",
+      "type": "project",
       "visible": true,
       "featured": false,
       "date": "2026-02-03",
@@ -95,6 +124,7 @@
     },
     {
       "id": "gramaticat",
+      "type": "project",
       "visible": true,
       "featured": false,
       "date": "2026-03-03",
@@ -130,6 +160,7 @@
     },
     {
       "id": "quest-404",
+      "type": "project",
       "visible": true,
       "featured": false,
       "date": "2026-03-03",
@@ -164,6 +195,7 @@
     },
     {
       "id": "ln-tip-jar",
+      "type": "project",
       "visible": true,
       "featured": false,
       "date": "2026-02-27",
@@ -197,6 +229,7 @@
     },
     {
       "id": "portfolio",
+      "type": "project",
       "visible": true,
       "featured": true,
       "date": "2026-02-27",
@@ -258,6 +291,11 @@
       "ca": "Web",
       "es": "Web",
       "en": "Web"
+    },
+    "reflection": {
+      "ca": "Reflexió",
+      "es": "Reflexión",
+      "en": "Reflection"
     }
   }
 }

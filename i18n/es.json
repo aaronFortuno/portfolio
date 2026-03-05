@@ -11,6 +11,8 @@
   },
   "card": {
     "viewMore": "Ver más",
+    "readMore": "Leer más",
+    "relatedProject": "Proyecto relacionado",
     "noImage": "Sin imagen",
     "featured": "Destacado"
   },
@@ -21,7 +23,8 @@
     "demo": "Demo en vivo",
     "docs": "Documentación",
     "images": "Imágenes",
-    "description": "Descripción"
+    "description": "Descripción",
+    "relatedProjects": "Proyectos relacionados"
   },
   "theme": {
     "dark": "Modo oscuro",
@@ -44,6 +47,12 @@
   "empty": {
     "noResults": "Ningún proyecto coincide con los filtros seleccionados.",
     "clearFilters": "Limpiar filtros"
+  },
+  "about": {
+    "toggle": "Quién soy",
+    "title": "Quién soy",
+    "text": "Soy profesor y creo herramientas educativas: juegos, experimentos y aplicaciones para el aula. Todo lo que encontrarás aquí es **gratuito y de código abierto**. Uso IA como herramienta de desarrollo, lo que me permite llevar ideas al mundo real rápidamente.\n\nEste espacio es mi jardín digital: proyectos y reflexiones mezclados cronológicamente, sin pretensiones.",
+    "v4v": "Todo lo que encontrarás aquí es gratuito y de código abierto. Si te resulta útil, puedes ayudarme invitándome a un café ⚡"
   },
   "aria": {
     "closeModal": "Cerrar detalle del proyecto",

@@ -11,6 +11,8 @@
   },
   "card": {
     "viewMore": "View more",
+    "readMore": "Read more",
+    "relatedProject": "Related project",
     "noImage": "No image",
     "featured": "Featured"
   },
@@ -21,7 +23,8 @@
     "demo": "Live demo",
     "docs": "Documentation",
     "images": "Images",
-    "description": "Description"
+    "description": "Description",
+    "relatedProjects": "Related projects"
   },
   "theme": {
     "dark": "Dark mode",
@@ -44,6 +47,12 @@
   "empty": {
     "noResults": "No projects match the selected filters.",
     "clearFilters": "Clear filters"
+  },
+  "about": {
+    "toggle": "About me",
+    "title": "About me",
+    "text": "I'm a teacher who builds educational tools: games, experiments and apps for the classroom. Everything you'll find here is **free and open source**. I use AI as a development tool, which lets me bring ideas to life quickly.\n\nThis space is my digital garden: projects and reflections mixed chronologically, no pretences.",
+    "v4v": "Everything here is free and open source. If you find it useful, you can help by buying me a coffee ⚡"
   },
   "aria": {
     "closeModal": "Close project detail",

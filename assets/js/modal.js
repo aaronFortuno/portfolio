@@ -53,23 +53,25 @@ const Modal = (() => {
    * Open the modal with a project's data.
    * @param {object} project
    */
-  function open(project) {
+  function open(entry) {
     const lang = I18n.current();
+    const type = entry.type || 'project';
+    const isNote = type === 'note';
 
-    const title       = _t(project.title, lang);
-    const fullDesc    = _t(project.fullDescription, lang) || _t(project.shortDescription, lang) || '';
-    const images      = project.images || [];
-    const links       = project.links  || {};
-    const tags        = project.tags   || [];
-    const projectLangs = project.projectLanguages || [];
-    const date        = project.date ? _formatDate(project.date, lang) : '';
+    const title       = _t(entry.title, lang);
+    const fullDesc    = _t(entry.fullDescription, lang) || _t(entry.shortDescription, lang) || '';
+    const images      = entry.images || [];
+    const links       = entry.links  || {};
+    const tags        = entry.tags   || [];
+    const projectLangs = entry.projectLanguages || [];
+    const date        = entry.date ? _formatDate(entry.date, lang) : '';
 
     // Render Markdown
     const descHtml = (typeof marked !== 'undefined')
       ? marked.parse(fullDesc)
       : fullDesc.replace(/\n/g, '<br>');
 
-    // Build image mosaic class
+    // Build image mosaic — show for projects always, for notes only if they have images
     const imgCount = images.length;
     const mosaicClass = imgCount === 0 ? '' :
       imgCount === 1 ? 'count-1' :
@@ -77,7 +79,6 @@ const Modal = (() => {
       imgCount === 3 ? 'count-3' :
       imgCount === 4 ? 'count-4' : 'count-more';
 
-    // Build images HTML
     const imagesHtml = imgCount > 0 ? `
       <div class="modal-section">
         <div class="modal-images ${mosaicClass}">
@@ -90,9 +91,9 @@ const Modal = (() => {
         </div>
       </div>` : '';
 
-    // Build links HTML
+    // Build links HTML — hide for notes
     const linkEntries = Object.entries(links).filter(([, v]) => v);
-    const linksHtml = linkEntries.length > 0 ? `
+    const linksHtml = (!isNote && linkEntries.length > 0) ? `
       <div class="modal-section">
         <p class="modal-section-label" data-i18n="modal.links">${I18n.get('modal.links') || 'Enllaços'}</p>
         <div class="modal-links">
@@ -102,6 +103,23 @@ const Modal = (() => {
                data-i18n="modal.${key}">
               ${_linkIcon(key)} ${I18n.get(`modal.${key}`) || key}
             </a>`).join('')}
+        </div>
+      </div>` : '';
+
+    // Build related projects HTML — for notes only
+    const relatedHtml = (isNote && entry.relatedProjects?.length > 0) ? `
+      <div class="modal-section">
+        <p class="modal-section-label" data-i18n="modal.relatedProjects">${I18n.get('modal.relatedProjects') || 'Projectes relacionats'}</p>
+        <div class="modal-links">
+          ${entry.relatedProjects.map(id => {
+            const related = _findProject(id);
+            if (!related) return '';
+            const relTitle = _t(related.title, lang);
+            return `<button class="modal-link modal-related-project" data-project-id="${id}">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="m9 12 2 2 4-4"/></svg>
+              ${relTitle}
+            </button>`;
+          }).join('')}
         </div>
       </div>` : '';
 
@@ -155,6 +173,7 @@ const Modal = (() => {
             <div class="modal-description">${descHtml}</div>
           </div>` : ''}
         ${linksHtml}
+        ${relatedHtml}
         ${tagsHtml}
       </div>`;
 
@@ -166,6 +185,18 @@ const Modal = (() => {
       const handler = () => openLightbox(wrap.dataset.lightboxSrc);
       wrap.addEventListener('click', handler);
       wrap.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') handler(); });
+    });
+
+    // Related project click → open that project's modal
+    _inner.querySelectorAll('.modal-related-project').forEach(btn => {
+      btn.addEventListener('click', e => {
+        e.preventDefault();
+        const related = _findProject(btn.dataset.projectId);
+        if (related) {
+          close();
+          setTimeout(() => open(related), 400);
+        }
+      });
     });
 
     // Show
@@ -200,6 +231,10 @@ const Modal = (() => {
     }
     lb.querySelector('#lightbox-img').src = src;
     requestAnimationFrame(() => lb.classList.add('open'));
+  }
+
+  function _findProject(id) {
+    return (typeof Renderer !== 'undefined') ? Renderer.allProjects().find(p => p.id === id) : null;
   }
 
   function _t(obj, lang) {

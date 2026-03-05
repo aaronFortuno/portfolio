@@ -40,16 +40,19 @@ const App = (() => {
     // 7. Setup theme toggle
     _setupThemeToggle();
 
-    // 8. Init modal
+    // 8. Init about section
+    _setupAbout();
+
+    // 9. Init modal
     Modal.init(tags);
 
-    // 9. Init renderer
+    // 10. Init renderer
     Renderer.setData(projects, tags);
 
-    // 10. Init filters → on change → re-render grid
+    // 11. Init filters → on change → re-render grid
     Filters.init(projects, tags, () => renderGrid());
 
-    // 11. Initial render
+    // 12. Initial render
     renderGrid();
   }
 
@@ -105,6 +108,33 @@ const App = (() => {
     }
   }
 
+  function _setupAbout() {
+    const toggle = document.getElementById('about-toggle');
+    const content = document.getElementById('about-content');
+    if (!toggle || !content) return;
+
+    // Render about content with markdown
+    _renderAboutContent();
+
+    toggle.addEventListener('click', () => {
+      const expanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', !expanded);
+      content.hidden = expanded;
+    });
+  }
+
+  function _renderAboutContent() {
+    const textEl = document.getElementById('about-text');
+    const v4vEl = document.getElementById('about-v4v');
+    if (textEl) {
+      const raw = I18n.get('about.text') || '';
+      textEl.innerHTML = (typeof marked !== 'undefined') ? marked.parse(raw) : raw.replace(/\n/g, '<br>');
+    }
+    if (v4vEl) {
+      v4vEl.textContent = I18n.get('about.v4v') || '';
+    }
+  }
+
   function _setupLangSelector(currentLang, config, projects, tags) {
     const sel = document.getElementById('lang-select');
     if (!sel) return;
@@ -114,6 +144,7 @@ const App = (() => {
       localStorage.setItem('portfolio-lang', newLang);
       await I18n.load(newLang);
       _applyHeaderFooter(config, newLang);
+      _renderAboutContent();
       Filters.refresh();
       renderGrid();
     });

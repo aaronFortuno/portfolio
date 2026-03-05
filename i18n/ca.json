@@ -11,6 +11,8 @@
   },
   "card": {
     "viewMore": "Veure més",
+    "readMore": "Llegir més",
+    "relatedProject": "Projecte relacionat",
     "noImage": "Sense imatge",
     "featured": "Destacat"
   },
@@ -21,7 +23,8 @@
     "demo": "Demo en viu",
     "docs": "Documentació",
     "images": "Imatges",
-    "description": "Descripció"
+    "description": "Descripció",
+    "relatedProjects": "Projectes relacionats"
   },
   "theme": {
     "dark": "Mode fosc",
@@ -44,6 +47,12 @@
   "empty": {
     "noResults": "Cap projecte coincideix amb els filtres seleccionats.",
     "clearFilters": "Netejar filtres"
+  },
+  "about": {
+    "toggle": "Qui sóc",
+    "title": "Qui sóc",
+    "text": "Sóc professor i creo eines educatives: jocs, experiments i aplicacions per a l'aula. Tot el que trobaràs aquí és **gratuït i de codi obert**. Faig servir IA com a eina de desenvolupament, cosa que em permet portar idees al món real ràpidament.\n\nAquest espai és el meu jardí digital: projectes i reflexions barrejats cronològicament, sense pretensions.",
+    "v4v": "Tot el que trobaràs aquí és gratuït i de codi obert. Si et resulta útil, pots ajudar-me convidant-me a un cafè ⚡"
   },
   "aria": {
     "closeModal": "Tancar detall del projecte",
