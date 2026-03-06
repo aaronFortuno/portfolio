@@ -1,6 +1,39 @@
 {
   "projects": [
     {
+      "id": "aqui-tries",
+      "type": "project",
+      "visible": true,
+      "featured": false,
+      "date": "2026-03-06",
+      "projectLanguages": ["ca", "es"],
+      "title": {
+        "ca": "A qui tries?",
+        "es": "¿A quién eliges?",
+        "en": "Who do you choose?"
+      },
+      "shortDescription": {
+        "ca": "Joc educatiu interactiu per treballar la igualtat de gènere amb alumnat de 6è de primària. 8 escenaris amb personatges diversos, mode individual i mode guiat per a l'aula amb connexió en temps real.",
+        "es": "Juego educativo interactivo para trabajar la igualdad de género con alumnado de 6º de primaria. 8 escenarios con personajes diversos, modo individual y modo guiado para el aula con conexión en tiempo real.",
+        "en": "Interactive educational game to address gender equality with 6th grade students. 8 scenarios with diverse characters, individual mode and guided classroom mode with real-time connection."
+      },
+      "fullDescription": {
+        "ca": "# A qui tries?\n\nJoc educatiu interactiu dissenyat per treballar la igualtat de gènere amb alumnat de Cicle Superior de Primària.\n\n## Com funciona?\n\nEs presenten situacions quotidianes o extraordinàries on cal triar persones per fer una tasca concreta. Cada personatge té habilitats, trets i una descripció detallada. L'alumnat tria sense adonar-se que els seus biaixos de gènere, edat, origen o aspecte influeixen en les decisions.\n\n## Escenaris\n\n- **La cacera del mamut** — 15 personatges prehistòrics, tria'n 5\n- **L'arbre caigut** — 20 veïns d'un poble, tria'n 5\n- **L'incendi forestal** — 18 voluntaris, tria'n 6 per dues tasques\n- **La persona armada** — 12 professionals, tria'n 2\n- **L'obra de construcció** — 16 treballadors, tria'n 4\n- **La llar d'infants** — 17 candidats, tria'n 3\n- **Cuidar una persona gran** — 16 candidats, tria'n 1\n- **El nen que plora al parc** — 15 persones, tria'n 1\n\n## Mode guiat (v0.4)\n\nEl docent crea una sala amb un codi de 4 dígits. Els alumnes s'hi connecten des dels seus dispositius. El docent tria l'escenari, els alumnes fan la selecció en temps real, i els resultats s'agreguen per gènere amb gràfics de barres per al debat a l'aula.\n\n## Tecnologies\n\n`React 19` · `Vite 7` · `Firebase Firestore` · `GitHub Pages`",
+        "es": "# ¿A quién eliges?\n\nJuego educativo interactivo diseñado para trabajar la igualdad de género con alumnado de Ciclo Superior de Primaria.\n\n## ¿Cómo funciona?\n\nSe presentan situaciones cotidianas o extraordinarias donde hay que elegir personas para realizar una tarea concreta. Cada personaje tiene habilidades, rasgos y una descripción detallada. El alumnado elige sin darse cuenta de que sus sesgos de género, edad, origen o aspecto influyen en las decisiones.\n\n## Escenarios\n\n- **La caza del mamut** — 15 personajes prehistóricos, elige 5\n- **El árbol caído** — 20 vecinos de un pueblo, elige 5\n- **El incendio forestal** — 18 voluntarios, elige 6 para dos tareas\n- **La persona armada** — 12 profesionales, elige 2\n- **La obra de construcción** — 16 trabajadores, elige 4\n- **La guardería** — 17 candidatos, elige 3\n- **Cuidar a una persona mayor** — 16 candidatos, elige 1\n- **El niño que llora en el parque** — 15 personas, elige 1\n\n## Modo guiado (v0.4)\n\nEl docente crea una sala con un código de 4 dígitos. Los alumnos se conectan desde sus dispositivos. El docente elige el escenario, los alumnos hacen la selección en tiempo real, y los resultados se agregan por género con gráficos de barras para el debate en el aula.\n\n## Tecnologías\n\n`React 19` · `Vite 7` · `Firebase Firestore` · `GitHub Pages`",
+        "en": "# Who do you choose?\n\nInteractive educational game designed to address gender equality with upper primary school students.\n\n## How does it work?\n\nStudents face everyday or extraordinary situations where they must choose people for a specific task. Each character has skills, traits and a detailed description. Students choose without realising that their biases around gender, age, origin or appearance influence their decisions.\n\n## Scenarios\n\n- **The mammoth hunt** — 15 prehistoric characters, choose 5\n- **The fallen tree** — 20 villagers, choose 5\n- **The forest fire** — 18 volunteers, choose 6 for two tasks\n- **The armed person** — 12 professionals, choose 2\n- **The construction site** — 16 workers, choose 4\n- **The nursery** — 17 candidates, choose 3\n- **Caring for an elderly person** — 16 candidates, choose 1\n- **The crying child in the park** — 15 people, choose 1\n\n## Guided mode (v0.4)\n\nThe teacher creates a room with a 4-digit code. Students connect from their devices. The teacher picks the scenario, students make their selections in real time, and results are aggregated by gender with bar charts for classroom debate.\n\n## Technologies\n\n`React 19` · `Vite 7` · `Firebase Firestore` · `GitHub Pages`"
+      },
+      "tags": ["web", "education"],
+      "images": [
+        "projects/aqui-tries/img/aqui-tries-01.webp",
+        "projects/aqui-tries/img/aqui-tries-02.webp"
+      ],
+      "links": {
+        "github": "https://github.com/aaronFortuno/aQuiTries",
+        "demo": "https://aaronfortuno.github.io/aQuiTries/",
+        "docs": null
+      }
+    },
+    {
       "id": "jardi-digital",
       "type": "note",
       "visible": true,
@@ -231,7 +264,7 @@
       "id": "portfolio",
       "type": "project",
       "visible": true,
-      "featured": true,
+      "featured": false,
       "date": "2026-02-27",
       "projectLanguages": ["ca", "es", "en"],
       "title": {
