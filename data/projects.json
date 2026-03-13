@@ -1,12 +1,58 @@
 {
   "projects": [
     {
+      "id": "polyedges",
+      "type": "project",
+      "visible": true,
+      "featured": false,
+      "date": "2026-03-13",
+      "projectLanguages": [
+        "ca",
+        "es",
+        "eu",
+        "gl",
+        "en"
+      ],
+      "title": {
+        "ca": "PolyEdges",
+        "es": "PolyEdges",
+        "en": "PolyEdges"
+      },
+      "shortDescription": {
+        "ca": "Eina educativa que genera models STL de sòlids platònics i arquimedians amb ranures per explorar camins i circuits eulerians passant un cordill per les arestes.",
+        "es": "Herramienta educativa que genera modelos STL de sólidos platónicos y arquimedianos con ranuras para explorar caminos y circuitos eulerianos pasando un cordel por las aristas.",
+        "en": "Educational tool that generates STL models of Platonic and Archimedean solids with grooves to explore Eulerian paths and circuits by threading cord along the edges."
+      },
+      "fullDescription": {
+        "ca": "# PolyEdges\n\n**PolyEdges** és una eina educativa interactiva que genera models STL de sòlids geomètrics (platònics i arquimedians) amb ranures al llarg de cada aresta. Els estudiants passen un cordill per les ranures per verificar experimentalment les propietats dels camins i circuits eulerians.\n\n## Característiques\n\n- Genera models STL de tots els **5 sòlids platònics** i els **13 sòlids arquimedians**\n- **Ranures CSG** al llarg de cada aresta perquè els estudiants hi puguin passar un cordill\n- **Anàlisi euleriana** automàtica: indica si el sòlid admet camí o circuit d'Euler\n- **Estimació de la longitud del cordill** necessari\n- **Forat per xinxeta** opcional per fixar el sòlid a un tauler\n- Exportació directa a **STL** per a impressió 3D\n- Vista en **filferro** per visualitzar les arestes\n- **Mode clar / fosc**\n- **Internacionalització** en català, castellà, euskera, gallec i anglès\n\n## Tecnologies\n\n| Tecnologia | Versió | Ús |\n|---|---|---|\n| Three.js | v0.169.0 | Renderització 3D |\n| Manifold-3D (WASM) | v3.0.0 | Geometria CSG |\n| JavaScript (Vanilla) | — | Lògica de l'aplicació |",
+        "es": "# PolyEdges\n\n**PolyEdges** es una herramienta educativa interactiva que genera modelos STL de sólidos geométricos (platónicos y arquimedianos) con ranuras a lo largo de cada arista. Los alumnos pasan un cordel por las ranuras para verificar experimentalmente las propiedades de los caminos y circuitos eulerianos.\n\n## Características\n\n- Genera modelos STL de los **5 sólidos platónicos** y los **13 sólidos arquimedianos**\n- **Ranuras CSG** a lo largo de cada arista para pasar un cordel\n- **Análisis euleriano** automático\n- **Estimación de la longitud del cordel** necesario\n- **Agujero para chincheta** opcional\n- Exportación directa a **STL** para impresión 3D\n- Vista en **wireframe**\n- **Modo claro / oscuro**\n- **Internacionalización** en catalán, castellano, euskera, gallego e inglés",
+        "en": "# PolyEdges\n\n**PolyEdges** is an interactive educational tool that generates STL models of geometric solids (Platonic and Archimedean) with grooves running along each edge. Students thread cord through the grooves to experimentally verify the properties of Eulerian paths and circuits.\n\n## Features\n\n- Generates STL models of all **5 Platonic solids** and all **13 Archimedean solids**\n- **CSG grooves** along every edge so students can thread cord through them\n- Automatic **Eulerian analysis**: indicates whether the solid supports an Euler path or circuit\n- **Cord length estimate** for the required amount of cord\n- Optional **pin hole** to attach the solid to a board with a thumbtack\n- One-click **STL export** for 3D printing\n- **Wireframe view**\n- **Light / dark mode**\n- **Internationalisation** in Catalan, Spanish, Basque, Galician and English"
+      },
+      "tags": [
+        "web",
+        "education",
+        "tool"
+      ],
+      "images": [
+        "projects/polyedges/img/polyedges-01.webp"
+      ],
+      "links": {
+        "github": "https://github.com/aaronFortuno/PolyEdges",
+        "demo": "https://aaronfortuno.github.io/PolyEdges",
+        "docs": null
+      }
+    },
+    {
       "id": "de-castells-a-projectes",
       "type": "note",
       "visible": true,
       "featured": false,
       "date": "2026-03-06",
-      "projectLanguages": ["ca", "es", "en"],
+      "projectLanguages": [
+        "ca",
+        "es",
+        "en"
+      ],
       "title": {
         "ca": "De castells a l'aire a projectes reals",
         "es": "De castillos en el aire a proyectos reales",
@@ -22,9 +68,14 @@
         "es": "# De castillos en el aire a proyectos reales\n\nEstos días con Claude Code están siendo de locos. Las ideas me vienen a la cabeza como misiles y no tengo tiempo de desarrollarlas.\n\nDespués de haber pasado 4 años estudiando el CFGS de Desarrollo de Aplicaciones Multiplataforma, estas herramientas de IA y los agentes autónomos que están creciendo hasta ocuparlo todo en el mundo del desarrollo de software están llegando a niveles de calidad realmente espectaculares. Lo que antes no podía pasar de simples ideas o castillos en el aire ahora se convierte en proyectos con cara y ojos, con consistencia y que funcionan con pocas horas de dedicación. En algunos casos, incluso minutos.\n\n## El salto de calidad\n\nEl salto de calidad con Opus 4.6 es realmente notable. Aunque no tengo muchísima experiencia todavía con este tipo de desarrollo *vibecodejando* (bueno, ni de este ni del \"tradicional\"), sí que veo que proyectos que hace no muchos meses era imposible automatizar, ahora se pueden hacer con un alto grado de éxito en muy poco tiempo. ¿Adónde llegaremos en unos pocos meses más?\n\nLos últimos proyectos que he desarrollado han funcionado con un **95-97% de éxito solo con la primera iteración**, lo que significa que solo se han necesitado unas pocas iteraciones más para dejarlos a punto.\n\n## Dos mensajes. Dos.\n\nPor ejemplo, el proyecto [Repte acceptat](https://aaronfortuno.github.io/repte-acceptat/) funcionó prácticamente al 100% con solo dos mensajes. **Dos.** Con toda su complejidad, que ciertamente considero que tiene.\n\nNo estamos hablando de una web con dos imágenes incrustadas y ale, a correr. Estamos hablando de un proyecto con toda una serie de lógicas, con unos efectos visuales y sonoros (incluso fue capaz de crear un script de Python para generar sus propias músicas y efectos de sonido), además de estructurar convenientemente toda la lógica de juego.\n\n## Maravilla y vértigo\n\nEsto significa que estamos llegando a un punto no muy lejano en el que cualquier persona podrá crear de la nada, sin experiencia previa, solo con un par de frases y guía oral, cualquier aplicación para cualquier uso que se nos pueda imaginar. Es espectacular.\n\nMe debato entre ver esto como algo maravilloso y aterrador a la vez, pero ahora sinceramente estoy maravillado. No sé qué pasará cuando alguna IA decida que los humanos estorbamos. Espero que lleguemos a algún punto de simbiosis.\n\nComo mínimo, poder hacer todos los proyectos y experimentos que se me ocurren y que hasta hace cuatro días eran para mí ciencia ficción, me resulta espectacular y creo que seguiré haciéndolo :)",
         "en": "# From pipe dreams to real projects\n\nThese days with Claude Code have been insane. Ideas hit me like missiles and I don't have time to develop them all.\n\nAfter spending 4 years studying a Higher Vocational Degree in Cross-Platform Application Development, these AI tools and autonomous agents that are taking over the software development world are reaching truly spectacular quality levels. What used to be nothing more than ideas or pipe dreams now become fully-fledged projects — consistent, functional, built in just a few hours. In some cases, even minutes.\n\n## The quality leap\n\nThe quality leap with Opus 4.6 is truly remarkable. While I don't have a ton of experience yet with this kind of *vibecoding* development (well, nor with the \"traditional\" kind either), I can clearly see that projects which were impossible to automate just a few months ago can now be built with a high success rate in very little time. Where will we be in just a few more months?\n\nThe latest projects I've developed have worked with a **95-97% success rate on the very first iteration**, meaning only a handful of additional iterations were needed to polish them.\n\n## Two messages. Two.\n\nFor example, the project [Repte acceptat](https://aaronfortuno.github.io/repte-acceptat/) worked practically at 100% with just two messages. **Two.** With all its complexity, which I certainly think it has.\n\nWe're not talking about a website with two embedded images and off you go. We're talking about a project with a whole set of game logic, visual and sound effects (it even managed to create a Python script to generate its own music and sound effects), on top of properly structuring the entire game logic.\n\n## Wonder and vertigo\n\nThis means we're approaching a not-so-distant point where anyone will be able to create from scratch, with no prior experience, just a couple of sentences and verbal guidance, any application for any use case imaginable. It's spectacular.\n\nI find myself torn between seeing this as something wonderful and terrifying at the same time, but right now I'm honestly in awe. I don't know what will happen when some AI decides that humans are in the way. I hope we reach some kind of symbiosis.\n\nAt the very least, being able to build all the projects and experiments that come to mind — things that until recently were pure science fiction to me — feels spectacular, and I think I'll keep doing it :)"
       },
-      "tags": ["reflection"],
+      "tags": [
+        "reflection"
+      ],
       "images": [],
-      "relatedProjects": ["quest-404", "aqui-tries"]
+      "relatedProjects": [
+        "quest-404",
+        "aqui-tries"
+      ]
     },
     {
       "id": "aqui-tries",
@@ -32,7 +83,10 @@
       "visible": true,
       "featured": false,
       "date": "2026-03-06",
-      "projectLanguages": ["ca", "es"],
+      "projectLanguages": [
+        "ca",
+        "es"
+      ],
       "title": {
         "ca": "A qui tries?",
         "es": "¿A quién eliges?",
@@ -48,7 +102,10 @@
         "es": "# ¿A quién eliges?\n\nJuego educativo interactivo diseñado para trabajar la igualdad de género con alumnado de Ciclo Superior de Primaria.\n\n## ¿Cómo funciona?\n\nSe presentan situaciones cotidianas o extraordinarias donde hay que elegir personas para realizar una tarea concreta. Cada personaje tiene habilidades, rasgos y una descripción detallada. El alumnado elige sin darse cuenta de que sus sesgos de género, edad, origen o aspecto influyen en las decisiones.\n\n## Escenarios\n\n- **La caza del mamut** — 15 personajes prehistóricos, elige 5\n- **El árbol caído** — 20 vecinos de un pueblo, elige 5\n- **El incendio forestal** — 18 voluntarios, elige 6 para dos tareas\n- **La persona armada** — 12 profesionales, elige 2\n- **La obra de construcción** — 16 trabajadores, elige 4\n- **La guardería** — 17 candidatos, elige 3\n- **Cuidar a una persona mayor** — 16 candidatos, elige 1\n- **El niño que llora en el parque** — 15 personas, elige 1\n\n## Modo guiado (v0.4)\n\nEl docente crea una sala con un código de 4 dígitos. Los alumnos se conectan desde sus dispositivos. El docente elige el escenario, los alumnos hacen la selección en tiempo real, y los resultados se agregan por género con gráficos de barras para el debate en el aula.\n\n## Tecnologías\n\n`React 19` · `Vite 7` · `Firebase Firestore` · `GitHub Pages`",
         "en": "# Who do you choose?\n\nInteractive educational game designed to address gender equality with upper primary school students.\n\n## How does it work?\n\nStudents face everyday or extraordinary situations where they must choose people for a specific task. Each character has skills, traits and a detailed description. Students choose without realising that their biases around gender, age, origin or appearance influence their decisions.\n\n## Scenarios\n\n- **The mammoth hunt** — 15 prehistoric characters, choose 5\n- **The fallen tree** — 20 villagers, choose 5\n- **The forest fire** — 18 volunteers, choose 6 for two tasks\n- **The armed person** — 12 professionals, choose 2\n- **The construction site** — 16 workers, choose 4\n- **The nursery** — 17 candidates, choose 3\n- **Caring for an elderly person** — 16 candidates, choose 1\n- **The crying child in the park** — 15 people, choose 1\n\n## Guided mode (v0.4)\n\nThe teacher creates a room with a 4-digit code. Students connect from their devices. The teacher picks the scenario, students make their selections in real time, and results are aggregated by gender with bar charts for classroom debate.\n\n## Technologies\n\n`React 19` · `Vite 7` · `Firebase Firestore` · `GitHub Pages`"
       },
-      "tags": ["web", "education"],
+      "tags": [
+        "web",
+        "education"
+      ],
       "images": [
         "projects/aqui-tries/img/aqui-tries-01.webp",
         "projects/aqui-tries/img/aqui-tries-02.webp"
@@ -65,7 +122,11 @@
       "visible": true,
       "featured": false,
       "date": "2026-03-05",
-      "projectLanguages": ["ca", "es", "en"],
+      "projectLanguages": [
+        "ca",
+        "es",
+        "en"
+      ],
       "title": {
         "ca": "El portfolio es converteix en jardí digital",
         "es": "El portfolio se convierte en jardín digital",
@@ -81,9 +142,13 @@
         "es": "# El portfolio se convierte en jardín digital\n\nHasta hoy, este portfolio era un escaparate técnico: fichas de proyecto con capturas de pantalla, tecnologías y enlaces. Funcional, sí. Pero frío. Sin alma.\n\n## ¿Qué ha cambiado?\n\nA partir de ahora, el portfolio es un **jardín digital**: un espacio donde los proyectos conviven con reflexiones, aprendizajes y notas personales. Todo mezclado cronológicamente en un solo feed, sin secciones artificiales.\n\nLos cambios técnicos son sencillos pero significativos:\n\n- **Nuevo tipo de entrada: notas** — tarjetas visualmente diferenciadas (con borde verde, sin carrusel) que contienen reflexiones en Markdown\n- **Sección \"Quién soy\"** — un par de párrafos que explican quién hay detrás de los proyectos\n- **Mensaje V4V visible** — para que la gente entienda la filosofía antes de decidir si quiere contribuir\n- **Proyectos relacionados** — las notas pueden enlazar a los proyectos de los que hablan\n\n## ¿Por qué?\n\nPorque el código abierto es el *qué*, pero falta el *por qué*. Cualquiera puede ver el código de una app educativa, pero lo que le da valor real es saber cómo se ha usado en el aula, qué han dicho los alumnos, qué problemas han surgido y cómo se han resuelto.\n\n## Valor por Valor (V4V)\n\nTodo lo que encontraréis aquí es y seguirá siendo **gratuito y de código abierto**. No hay muros de pago, no hay publicidad, no hay seguimiento.\n\nEl modelo es simple: si algo os resulta útil — una app, una reflexión, una idea — y queréis apoyar el proyecto, podéis hacerlo con una microdonación Lightning Network. No es una obligación, es una invitación.\n\nEsta filosofía se llama **Value for Value**: cada uno decide libremente cuánto vale lo que ha recibido. Puede ser cero, puede ser un café, puede ser un gracias. Todo cuenta.\n\n## ¿Y ahora?\n\nA partir de aquí, iré intercalando notas con proyectos. Experiencias de aula, decisiones de diseño, errores cometidos, cosas aprendidas. Un jardín que crece orgánicamente, sin calendario editorial ni presión de publicación.",
         "en": "# The portfolio becomes a digital garden\n\nUntil today, this portfolio was a technical showcase: project cards with screenshots, technologies and links. Functional, yes. But cold. Soulless.\n\n## What changed?\n\nFrom now on, the portfolio is a **digital garden**: a space where projects coexist with reflections, learnings and personal notes. Everything mixed chronologically in a single feed, no artificial sections.\n\nThe technical changes are simple but meaningful:\n\n- **New entry type: notes** — visually distinct cards (with green accent border, no carousel) containing Markdown reflections\n- **\"About me\" section** — a couple of paragraphs explaining who's behind the projects\n- **Visible V4V message** — so people understand the philosophy before deciding whether to contribute\n- **Related projects** — notes can link to the projects they discuss\n\n## Why?\n\nBecause open source is the *what*, but the *why* is missing. Anyone can see the code of an educational app, but what gives it real value is knowing how it was used in the classroom, what the students said, what problems came up and how they were solved.\n\n## Value for Value (V4V)\n\nEverything you'll find here is and will remain **free and open source**. No paywalls, no ads, no tracking.\n\nThe model is simple: if something is useful to you — an app, a reflection, an idea — and you want to support the project, you can do so with a Lightning Network micro-donation. It's not an obligation, it's an invitation.\n\nThis philosophy is called **Value for Value**: everyone freely decides how much what they received is worth. It can be zero, it can be a coffee, it can be a thank you. Everything counts.\n\n## What now?\n\nFrom here on, I'll be mixing notes with projects. Classroom experiences, design decisions, mistakes made, lessons learned. A garden that grows organically, with no editorial calendar or publishing pressure."
       },
-      "tags": ["reflection"],
+      "tags": [
+        "reflection"
+      ],
       "images": [],
-      "relatedProjects": ["portfolio"]
+      "relatedProjects": [
+        "portfolio"
+      ]
     },
     {
       "id": "caicul",
@@ -91,7 +156,11 @@
       "visible": true,
       "featured": false,
       "date": "2026-03-03",
-      "projectLanguages": ["ca", "es", "en"],
+      "projectLanguages": [
+        "ca",
+        "es",
+        "en"
+      ],
       "title": {
         "ca": "cAIcul",
         "es": "cAIcul",
@@ -107,7 +176,10 @@
         "es": "# cAIcul\n\nAplicacion interactiva para la resolucion de problemas matematicos contextualizados con asistencia de IA.\n\nLos alumnos eligen un nivel (Ciclo Medio, Ciclo Superior, 1o ESO, 2o ESO), reciben un problema contextualizado y deben identificar los datos, escribir las operaciones y dar la respuesta. La IA (Gemini) valida la solucion y da feedback detallado.\n\n## Caracteristicas\n\n- **4 niveles educativos**: Ciclo Medio y Superior de Primaria, 1o y 2o Ciclo de ESO\n- **Validacion con IA**: Gemini analiza datos, operaciones y respuesta por separado\n- **Feedback detallado**: explicacion punto por punto de que esta bien y que hay que mejorar\n- **Calculadora integrada** para hacer operaciones sin salir de la app\n- **Interfaz multilingue**: catalan, castellano e ingles\n- **Modo claro / oscuro** con transicion suave\n- **Estadisticas**: contador de problemas resueltos y racha de respuestas correctas\n- **Diseno responsive** con Tailwind CSS\n\n## Tecnologias\n\n`React 19` . `TypeScript` . `Vite` . `Tailwind CSS` . `Gemini API` . `Google Cloud Run`",
         "en": "# cAIcul\n\nInteractive app for solving contextualised math problems with AI assistance.\n\nStudents choose a level (3rd-4th grade, 5th-6th grade, Middle School 1, Middle School 2), receive a contextualised problem and must identify the data, write the operations and give the answer. The AI (Gemini) validates the solution and provides detailed feedback.\n\n## Features\n\n- **4 educational levels**: 3rd-4th and 5th-6th grade, Middle School 1 and 2\n- **AI validation**: Gemini analyses data, operations and answer separately\n- **Detailed feedback**: point-by-point explanation of what is correct and what needs improvement\n- **Built-in calculator** to perform operations without leaving the app\n- **Multilingual interface**: Catalan, Spanish and English\n- **Light / dark mode** with smooth transition\n- **Statistics**: solved problems counter and correct answer streak\n- **Responsive design** with Tailwind CSS\n\n## Technologies\n\n`React 19` . `TypeScript` . `Vite` . `Tailwind CSS` . `Gemini API` . `Google Cloud Run`"
       },
-      "tags": ["web", "education"],
+      "tags": [
+        "web",
+        "education"
+      ],
       "images": [
         "projects/caicul/img/caicul-01.webp"
       ],
@@ -123,7 +195,9 @@
       "visible": true,
       "featured": false,
       "date": "2026-03-03",
-      "projectLanguages": ["agnostic"],
+      "projectLanguages": [
+        "agnostic"
+      ],
       "title": {
         "ca": "calc-o-matic",
         "es": "calc-o-matic",
@@ -139,7 +213,11 @@
         "es": "# calc-o-matic\n\nJuego de puzzles matematicos estilo factory-builder para navegador web.\n\nConstruye lineas de produccion que procesan numeros: encamina tokens a traves de operadores matematicos para alcanzar el valor objetivo en el receptor.\n\n## Caracteristicas\n\n- **6 tutoriales** guiados para aprender las mecanicas basicas\n- **11 operadores** matematicos: suma, resta, multiplicacion, division, potencia, modulo, MCD, cuadrado, raiz cuadrada, factor y es primo?\n- **Generador procedural** de niveles con 5 grados de dificultad y plantillas variadas\n- **Animaciones suaves**: tokens con interpolacion, cintas transportadoras animadas con curvas en L\n- **Sistema de progresion**: XP, niveles y desbloqueo de operadores\n- **Canvas HTML5**: renderizado completo con grid infinito, zoom y pan (teclado, raton, middle-click)\n- **Panel de administracion**: generador de niveles, importacion/exportacion JSON, slots de guardado\n- **142 tests** con Vitest\n\n## Tecnologias\n\n`React 18` . `TypeScript` . `Vite` . `Tailwind CSS` . `Zustand` . `i18next` . `HTML5 Canvas` . `Vitest` . `GitHub Pages`",
         "en": "# calc-o-matic\n\nMath puzzle game with factory-builder mechanics for the web browser.\n\nBuild production lines that process numbers: route tokens through math operators to hit the target value at the receiver.\n\n## Features\n\n- **6 guided tutorials** to learn the basic mechanics\n- **11 math operators**: add, subtract, multiply, divide, power, modulo, GCD, square, square root, factor and is prime?\n- **Procedural level generator** with 5 difficulty tiers and varied templates\n- **Smooth animations**: token interpolation, animated conveyor belts with L-shaped corners\n- **Progression system**: XP, levels and operator unlocks\n- **HTML5 Canvas**: full rendering with infinite grid, zoom and pan (keyboard, mouse, middle-click drag)\n- **Admin panel**: level generator, JSON import/export, save slots\n- **142 tests** with Vitest\n\n## Technologies\n\n`React 18` . `TypeScript` . `Vite` . `Tailwind CSS` . `Zustand` . `i18next` . `HTML5 Canvas` . `Vitest` . `GitHub Pages`"
       },
-      "tags": ["web", "game", "education"],
+      "tags": [
+        "web",
+        "game",
+        "education"
+      ],
       "images": [
         "projects/calc-o-matic/img/calc-o-matic-01.webp"
       ],
@@ -155,7 +233,11 @@
       "visible": true,
       "featured": false,
       "date": "2026-02-03",
-      "projectLanguages": ["ca", "es", "en"],
+      "projectLanguages": [
+        "ca",
+        "es",
+        "en"
+      ],
       "title": {
         "ca": "Speeedr",
         "es": "Speeedr",
@@ -171,7 +253,10 @@
         "es": "# Speeedr\n\nHerramienta web de lectura rapida sencilla pero personalizable.\n\n## Caracteristicas\n\n- **Entrada de texto libre** o seleccion de textos de ejemplo\n- **Velocidad inicial y objetivo** configurables en palabras por minuto (PPM)\n- **Aceleracion progresiva** con duracion en segundos ajustable\n- **Contador de palabras** automatico\n- **Tamano de texto ajustable** (A+ / A-)\n- **Interfaz multilingue** (catalan, castellano, ingles)\n- **Sin dependencias** — HTML, CSS y JavaScript vanilla\n\n## Tecnologias\n\n`HTML5` . `CSS3` . `JavaScript vanilla` . `i18n` . `GitHub Pages`",
         "en": "# Speeedr\n\nA simple but customizable speed reading web tool.\n\n## Features\n\n- **Free text input** or sample text selection\n- **Initial and target speed** configurable in words per minute (PPM)\n- **Progressive acceleration** with adjustable duration in seconds\n- **Automatic word counter**\n- **Adjustable text size** (A+ / A-)\n- **Multilingual interface** (Catalan, Spanish, English)\n- **No dependencies** — HTML, CSS and vanilla JavaScript\n\n## Technologies\n\n`HTML5` . `CSS3` . `Vanilla JavaScript` . `i18n` . `GitHub Pages`"
       },
-      "tags": ["web", "tool"],
+      "tags": [
+        "web",
+        "tool"
+      ],
       "images": [
         "projects/speeedr/img/speeedr-01.webp"
       ],
@@ -187,7 +272,9 @@
       "visible": true,
       "featured": false,
       "date": "2026-03-03",
-      "projectLanguages": ["ca"],
+      "projectLanguages": [
+        "ca"
+      ],
       "title": {
         "ca": "gramatiCat",
         "es": "gramatiCat",
@@ -203,7 +290,10 @@
         "es": "# gramatiCat\n\nAplicacion web de practica de lengua catalana para alumnos de Ciclo Superior de Primaria y ESO.\n\ngramatiCat es una herramienta educativa interactiva que permite a los alumnos practicar gramatica, ortografia, lexico y sintaxis catalana de manera autonoma y gamificada.\n\n## Caracteristicas\n\n- **4 categorias**: Gramatica, Ortografia, Lexico y Sintaxis\n- **4 tipos de ejercicios**: multi-opcion, rellenar huecos, arrastrar y clasificar, clasificacion de palabras\n- **Gamificacion**: rachas de respuestas correctas, temporizador y medallas (bronce, plata, oro + especiales)\n- **Estadisticas locales**: porcentaje de aciertos por categoria, evolucion temporal y mapa de actividad\n- **Admin Previewer**: previsualiza ejercicios JSON antes de anadirlos al repositorio\n- **Sin servidor**: funciona completamente en GitHub Pages con localStorage\n\n## Tecnologias\n\n`React 19` . `TypeScript` . `Vite` . `Tailwind CSS v4` . `React Router v7` . `@dnd-kit` . `Recharts`\n\n## Instalacion local\n\n```bash\ngit clone https://github.com/aaronFortuno/gramatiCat.git\ncd gramatiCat\nnpm install\nnpm run dev\nnpm run test\n```\n\n## Anadir ejercicios\n\nLos ejercicios son ficheros JSON dentro de `public/exercicis/{categoria}/{tema}/`. Utiliza el Admin Previewer (`#/admin`) para validarlos antes de hacer commit.",
         "en": "# gramatiCat\n\nCatalan language practice web app for upper primary and secondary school students.\n\ngramatiCat is an interactive educational tool that lets students practice Catalan grammar, spelling, vocabulary and syntax autonomously with gamification elements.\n\n## Features\n\n- **4 categories**: Grammar, Spelling, Vocabulary and Syntax\n- **4 exercise types**: multiple choice, fill in the blank, drag and drop, word classification\n- **Gamification**: correct answer streaks, timer and medals (bronze, silver, gold + specials)\n- **Local statistics**: accuracy percentage per category, time evolution and activity heatmap\n- **Admin Previewer**: preview exercise JSON files before adding them to the repository\n- **Serverless**: runs entirely on GitHub Pages with localStorage\n\n## Technologies\n\n`React 19` . `TypeScript` . `Vite` . `Tailwind CSS v4` . `React Router v7` . `@dnd-kit` . `Recharts`\n\n## Local setup\n\n```bash\ngit clone https://github.com/aaronFortuno/gramatiCat.git\ncd gramatiCat\nnpm install\nnpm run dev\nnpm run test\n```\n\n## Adding exercises\n\nExercises are JSON files inside `public/exercicis/{category}/{topic}/`. Use the Admin Previewer (`#/admin`) to validate them before committing."
       },
-      "tags": ["web", "education"],
+      "tags": [
+        "web",
+        "education"
+      ],
       "images": [
         "projects/gramaticat/img/gramaticat-01.webp",
         "projects/gramaticat/img/gramaticat-02.webp",
@@ -223,7 +313,9 @@
       "visible": true,
       "featured": false,
       "date": "2026-03-03",
-      "projectLanguages": ["ca"],
+      "projectLanguages": [
+        "ca"
+      ],
       "title": {
         "ca": "Aventures Textuals Retro",
         "es": "Aventuras Textuales Retro",
@@ -239,7 +331,11 @@
         "es": "# Aventuras Textuales Retro\n\nMotor de aventuras textuales estilo anos 70-80 para navegador web.\n\nElige tu aventura, toma decisiones y descubre finales absurdos, tragicos o — con mucha suerte — victoriosos.\n\n## Caracteristicas\n\n- **Estetica retro CRT** con fuente pixelada, scanlines, vineta y flicker\n- **Efecto typewriter** configurable (texto letra a letra con cursor parpadeante)\n- **Multiples aventuras** independientes cargadas desde ficheros JSON\n- **Modo claro / oscuro** y selector de tamano de letra (3 tamanos)\n- **Musica chiptune** generada proceduralmente (5 pistas: menu, aventura, tension, victoria, muerte)\n- **Efectos sonoros** 8-bit para seleccion, victoria y derrota\n- **Arquitectura modular**: motor generico que separa logica, UI y contenido narrativo\n- **Sin base de datos** ni almacenamiento de datos de usuario\n\n## Aventura incluida: Quest 404\n\nEres **Baldiri**, aventurero de 3a categoria (licencia caducada), que ha encontrado un mapa del tesoro en un vaso de cerveza. 7 nodos de decision, 10 finales (9 desastrosos + 1 exito).\n\n## Tecnologias\n\n`HTML5` . `CSS3` . `JavaScript vanilla (ES6+)` . `GitHub Pages` . `Python (generador audio)`\n\n## Anadir nuevas aventuras\n\n1. Crear un fichero JSON en `stories/` siguiendo el formato documentado\n2. Registrar la aventura en el manifiesto `stories/manifest.json`\n3. La aventura aparece automaticamente en el menu de seleccion",
         "en": "# Retro Text Adventures\n\nA 70s-80s style text adventure engine for the web browser.\n\nChoose your adventure, make decisions and discover absurd, tragic or — with a lot of luck — victorious endings.\n\n## Features\n\n- **Retro CRT aesthetics** with pixel font, scanlines, vignette and flicker\n- **Configurable typewriter effect** (text letter by letter with blinking cursor)\n- **Multiple independent adventures** loaded from JSON files\n- **Light / dark mode** and font size selector (3 sizes)\n- **Procedurally generated chiptune music** (5 tracks: menu, adventure, tension, victory, death)\n- **8-bit sound effects** for selection, victory and defeat\n- **Modular architecture**: generic engine separating logic, UI and narrative content\n- **No database** or user data storage\n\n## Included adventure: Quest 404\n\nYou are **Baldiri**, a 3rd-class adventurer (expired license), who found a treasure map on a beer napkin. 7 decision nodes, 10 endings (9 disastrous + 1 success).\n\n## Technologies\n\n`HTML5` . `CSS3` . `Vanilla JavaScript (ES6+)` . `GitHub Pages` . `Python (audio generator)`\n\n## Adding new adventures\n\n1. Create a JSON file in `stories/` following the documented format\n2. Register the adventure in the manifest `stories/manifest.json`\n3. The adventure automatically appears in the selection menu"
       },
-      "tags": ["web", "game", "experiment"],
+      "tags": [
+        "web",
+        "game",
+        "experiment"
+      ],
       "images": [
         "projects/repte-acceptat/img/repte-acceptat-01.webp",
         "projects/repte-acceptat/img/repte-acceptat-02.webp",
@@ -258,7 +354,9 @@
       "visible": true,
       "featured": false,
       "date": "2026-02-27",
-      "projectLanguages": ["agnostic"],
+      "projectLanguages": [
+        "agnostic"
+      ],
       "title": {
         "ca": "ln-tip-jar",
         "es": "ln-tip-jar",
@@ -274,7 +372,10 @@
         "es": "# ⚡ ln-tip-jar\n\nWeb Component reutilizable para aceptar microdonativos via **Lightning Network**. Funciona en HTML estático, React, Vue o cualquier entorno web sin dependencias de framework.\n\n## Uso\n\n```html\n<script src=\"ln-tip-jar.js\"></script>\n\n<ln-tip-jar\n  ln-address=\"tunombre@walletofsatoshi.com\"\n  portfolio-url=\"https://tudominio.com\"\n  portfolio-label=\"Ver más proyectos\"\n  hover-text=\"¿Me invitas a un café? 😊\"\n  button-position=\"right\"\n></ln-tip-jar>\n```\n\n## Atributos\n\n| Atributo | Descripción | Por defecto |\n|---|---|---|\n| `ln-address` | Lightning Address del destinatario | — |\n| `portfolio-url` | URL del enlace al portfolio | `#` |\n| `portfolio-label` | Texto del enlace al portfolio | `Ver más proyectos` |\n| `hover-text` | Texto que aparece en hover del botón | `¿Me invitas a un café? 😊` |\n| `button-position` | Posición del botón: `left` o `right` | `right` |\n\n## Características\n\n- **Botón flotante** circular que se expande en hover hacia el centro de la pantalla\n- **Modal** con animación fade-in + scale, anclado por encima del botón\n- **QR code** de la Lightning Address (lazy load via CDN, solo al abrir el modal)\n- **Copiar al portapapeles** con feedback visual\n- **CSS encapsulado** via Shadow DOM — no interfiere con los estilos del proyecto host\n- **Accesible**: `role=\"dialog\"`, ARIA labels, gestión de foco, cierre con `Escape`\n- **Sin dependencias** de framework — un único archivo JS\n\n## Licencia\n\nMIT",
         "en": "# ⚡ ln-tip-jar\n\nReusable Web Component to accept micro-donations via **Lightning Network**. Works in static HTML, React, Vue or any web environment with no framework dependencies.\n\n## Usage\n\n```html\n<script src=\"ln-tip-jar.js\"></script>\n\n<ln-tip-jar\n  ln-address=\"yourname@walletofsatoshi.com\"\n  portfolio-url=\"https://yourdomain.com\"\n  portfolio-label=\"See more projects\"\n  hover-text=\"Buy me a coffee? 😊\"\n  button-position=\"right\"\n></ln-tip-jar>\n```\n\n## Attributes\n\n| Attribute | Description | Default |\n|---|---|---|\n| `ln-address` | Recipient's Lightning Address | — |\n| `portfolio-url` | Portfolio link URL | `#` |\n| `portfolio-label` | Portfolio link text | `See more projects` |\n| `hover-text` | Text shown on button hover | `Buy me a coffee? 😊` |\n| `button-position` | Button position: `left` or `right` | `right` |\n\n## Features\n\n- **Floating button** that expands on hover toward the center of the screen\n- **Modal** with fade-in + scale animation, anchored above the button\n- **QR code** for the Lightning Address (lazy load via CDN, only when the modal opens)\n- **Copy to clipboard** with visual feedback\n- **Encapsulated CSS** via Shadow DOM — never interferes with host project styles\n- **Accessible**: `role=\"dialog\"`, ARIA labels, focus management, `Escape` to close\n- **No framework dependencies** — a single JS file\n\n## License\n\nMIT"
       },
-      "tags": ["web", "tool"],
+      "tags": [
+        "web",
+        "tool"
+      ],
       "images": [
         "projects/ln-tip-jar/img/ln-tip-jar3.webp",
         "projects/ln-tip-jar/img/ln-tip-jar2.webp",
@@ -292,7 +393,11 @@
       "visible": true,
       "featured": false,
       "date": "2026-02-27",
-      "projectLanguages": ["ca", "es", "en"],
+      "projectLanguages": [
+        "ca",
+        "es",
+        "en"
+      ],
       "title": {
         "ca": "Portfolio personal",
         "es": "Portfolio personal",
@@ -308,7 +413,10 @@
         "es": "# Portfolio personal\n\nPortfolio estático para mostrar proyectos web, apps y MVPs, alojado en **GitHub Pages**.\n\n## Características\n\n- **Zero compilación** — HTML5, CSS3 y Vanilla JS puros, sin frameworks ni npm\n- **Modo oscuro por defecto** con selector modo claro; paleta de tonos verdes\n- **Interfaz multilingüe** — catalán (por defecto), castellano e inglés\n- **Rejilla adaptativa** — responsive para móvil, tableta y escritorio\n- **Carrusel de imágenes** en las cards, vista en mosaico en el modal de detalle\n- **Soporte Markdown** en las descripciones completas (via `marked.js` incluido localmente)\n- **Filtros por etiquetas** y por idioma del proyecto\n- **Orden cronológico** — los proyectos más recientes primero; los destacados flotan arriba\n- **Modal de detalle** — descripción completa, mosaico de imágenes con lightbox, y enlaces\n- **Panel de administración local** — `admin/index.html` para añadir/editar proyectos y exportar JSON\n- **GitHub Actions** — despliegue automático a GitHub Pages al hacer push a `main`\n- **Ningún servicio externo** — todo autocontenido en el repositorio\n\n## Tecnologías\n\n`HTML5` · `CSS3` · `Vanilla JS` · `GitHub Pages` · `GitHub Actions`\n\n## Uso\n\n```bash\n# Servir localmente\nnpx serve .\n# Abrir http://localhost:3000\n```\n\n## Añadir un proyecto nuevo\n\n1. Crear carpeta `projects/nombre-proyecto/img/`\n2. Copiar capturas de pantalla (formato `.webp` recomendado)\n3. Añadir entrada a `data/projects.json`\n4. `git add . && git commit -m \"feat: add nombre-proyecto\" && git push`",
         "en": "# Personal portfolio\n\nStatic portfolio to showcase web projects, apps and MVPs, hosted on **GitHub Pages**.\n\n## Features\n\n- **Zero build step** — pure HTML5, CSS3 and Vanilla JS, no frameworks, no npm\n- **Dark mode by default** with light mode toggle; green accent palette\n- **Multilingual UI** — Catalan (default), Spanish, English\n- **Adaptive card grid** — responsive layout for mobile, tablet and desktop\n- **Image carousel** in cards, mosaic view in detail modal\n- **Markdown support** in full project descriptions (via bundled `marked.js`)\n- **Tag filters** and project language filters\n- **Chronological order** — newest projects first; featured projects float to top\n- **Detail modal** — full description, image mosaic with lightbox, links to GitHub / demo / docs\n- **Local admin panel** — `admin/index.html` to add/edit projects and export JSON\n- **GitHub Actions** — automatic deployment to GitHub Pages on push to `main`\n- **No external services** — everything self-contained in the repository\n\n## Technologies\n\n`HTML5` · `CSS3` · `Vanilla JS` · `GitHub Pages` · `GitHub Actions`\n\n## Usage\n\n```bash\n# Serve locally\nnpx serve .\n# Open http://localhost:3000\n```\n\n## Adding a new project\n\n1. Create folder `projects/project-name/img/`\n2. Copy screenshots (`.webp` format recommended)\n3. Add entry to `data/projects.json`\n4. `git add . && git commit -m \"feat: add project-name\" && git push`"
       },
-      "tags": ["web", "tool"],
+      "tags": [
+        "web",
+        "tool"
+      ],
       "images": [
         "projects/portfolio/img/portfolio-01.webp",
         "projects/portfolio/img/portfolio-mobile-01.webp"
