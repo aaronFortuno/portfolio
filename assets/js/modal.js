@@ -134,7 +134,7 @@ const Modal = (() => {
         </div>
       </div>` : '';
 
-    // Project language pills
+    // Project language pills — clickable for notes to switch content language
     const LANG_LABELS = {
       ca: I18n.get('projectLang.ca') || 'Català',
       es: I18n.get('projectLang.es') || 'Castellà',
@@ -144,7 +144,10 @@ const Modal = (() => {
     const langPillsHtml = projectLangs.length > 0
       ? `<span class="modal-proj-langs">
            <span>${I18n.get('projectLang.available') || 'Disponible en'}:</span>
-           ${projectLangs.map(l => `<span class="card-lang-pill">${LANG_LABELS[l] || l}</span>`).join('')}
+           ${projectLangs.map(l => isNote
+             ? `<button class="card-lang-pill lang-switch-btn${l === lang ? ' active' : ''}" data-lang="${l}">${LANG_LABELS[l] || l}</button>`
+             : `<span class="card-lang-pill">${LANG_LABELS[l] || l}</span>`
+           ).join('')}
          </span>`
       : '';
 
@@ -198,6 +201,30 @@ const Modal = (() => {
         }
       });
     });
+
+    // Language switch buttons for notes — update content in place
+    if (isNote) {
+      _inner.querySelectorAll('.lang-switch-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const newLang = btn.dataset.lang;
+          // Update active state
+          _inner.querySelectorAll('.lang-switch-btn').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          // Update title
+          const titleEl = _inner.querySelector('.modal-title');
+          if (titleEl) titleEl.textContent = _t(entry.title, newLang);
+          // Update date
+          const dateEl = _inner.querySelector('.modal-date');
+          if (dateEl && entry.date) dateEl.textContent = _formatDate(entry.date, newLang);
+          // Update description
+          const descEl = _inner.querySelector('.modal-description');
+          if (descEl) {
+            const newDesc = _t(entry.fullDescription, newLang) || _t(entry.shortDescription, newLang) || '';
+            descEl.innerHTML = (typeof marked !== 'undefined') ? marked.parse(newDesc) : newDesc.replace(/\n/g, '<br>');
+          }
+        });
+      });
+    }
 
     // Show
     _backdrop.classList.add('open');

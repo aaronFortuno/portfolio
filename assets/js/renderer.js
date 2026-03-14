@@ -242,7 +242,7 @@ const Renderer = (() => {
     try {
       const localeMap = { ca: 'ca-ES', es: 'es-ES', en: 'en-GB' };
       return new Date(iso + 'T00:00:00').toLocaleDateString(localeMap[lang] || 'ca-ES', {
-        year: 'numeric', month: 'short'
+        year: 'numeric', month: 'short', day: 'numeric'
       });
     } catch { return iso; }
   }

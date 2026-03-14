@@ -859,6 +859,23 @@
   color: var(--text-muted);
 }
 
+/* Language switch buttons in modal */
+.lang-switch-btn {
+  cursor: pointer;
+  border: 1px solid transparent;
+  background: none;
+  transition: all var(--transition-fast);
+}
+.lang-switch-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.lang-switch-btn.active {
+  background: var(--accent);
+  color: var(--bg);
+  border-color: var(--accent);
+}
+
 /* Lightbox (image zoom) */
 .lightbox {
   position: fixed;
