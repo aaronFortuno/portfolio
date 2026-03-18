@@ -1,6 +1,38 @@
 {
   "projects": [
     {
+      "id": "exponencialitat",
+      "type": "note",
+      "visible": true,
+      "featured": false,
+      "date": "2026-03-18",
+      "projectLanguages": [
+        "ca",
+        "es",
+        "en"
+      ],
+      "title": {
+        "ca": "Exponencialitat",
+        "es": "Exponencialidad",
+        "en": "Exponentiality"
+      },
+      "shortDescription": {
+        "ca": "De fer experiments manuals a tenir un sistema orquestrat amb models locals controlat des del mòbil. En deu dies. Això és exponencialitat.",
+        "es": "De hacer experimentos manuales a tener un sistema orquestado con modelos locales controlado desde el móvil. En diez días. Esto es exponencialidad.",
+        "en": "From manual experiments to a fully orchestrated system with local models controlled from my phone. In ten days. That's exponentiality."
+      },
+      "fullDescription": {
+        "ca": "# Exponencialitat\n\nEn una setmana i mitja tot s'ha accelerat. Fa 10 dies estava utilitzant Claude Code manualment per fer petits experiments en local. Fa 5 dies vaig descobrir [opencode](https://github.com/anomalyco/opencode) i vaig començar a utilitzar Opus 4.6 per orquestrar un petit projecte amb 3 models locals corrent a la meva màquina. Avui tinc Claude Code comunicant-se amb els models en local mitjançant un MCP que ha fet en un tres i no res, i controlant-ho tot de forma remota des del mòbil.\n\nNo sé on serem d'aquí a 4 dies, però crec que això és el precís significat d'**exponencialitat**.",
+        "es": "# Exponencialidad\n\nEn semana y media todo se ha acelerado. Hace 10 días estaba utilizando Claude Code manualmente para hacer pequeños experimentos en local. Hace 5 días descubrí [opencode](https://github.com/anomalyco/opencode) y empecé a utilizar Opus 4.6 para orquestar un pequeño proyecto con 3 modelos locales corriendo en mi máquina. Hoy tengo a Claude Code comunicándose con los modelos en local mediante un MCP que ha creado en un pispás, y controlándolo todo de forma remota desde el móvil.\n\nNo sé dónde estaremos dentro de 4 días, pero creo que esto es el preciso significado de **exponencialidad**.",
+        "en": "# Exponentiality\n\nIn a week and a half everything has accelerated. 10 days ago I was using Claude Code manually for small local experiments. 5 days ago I discovered [opencode](https://github.com/anomalyco/opencode) and started using Opus 4.6 to orchestrate a small project with 3 local models running on my machine. Today I have Claude Code communicating with local models through an MCP it built in no time, and I'm controlling the whole thing remotely from my phone.\n\nI don't know where we'll be in 4 days, but I think this is the precise meaning of **exponentiality**."
+      },
+      "tags": [
+        "reflection"
+      ],
+      "images": [],
+      "relatedProjects": []
+    },
+    {
       "id": "tot-va-molt-rapid",
       "type": "note",
       "visible": true,
