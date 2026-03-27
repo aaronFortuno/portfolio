@@ -1,6 +1,47 @@
 {
   "projects": [
     {
+      "id": "refi",
+      "type": "project",
+      "visible": true,
+      "featured": false,
+      "date": "2026-03-27",
+      "projectLanguages": [
+        "ca",
+        "es",
+        "en"
+      ],
+      "title": {
+        "ca": "Refi — Simulador de Refinançament",
+        "es": "Refi — Simulador de Refinanciación",
+        "en": "Refi — Refinancing Simulator"
+      },
+      "shortDescription": {
+        "ca": "Aplicació web per simular escenaris de refinançament, amortització anticipada i analitzar si val la pena mantenir o cancel·lar assegurances vinculades a préstecs.",
+        "es": "Aplicación web para simular escenarios de refinanciación, amortización anticipada y analizar si vale la pena mantener o cancelar seguros vinculados a préstamos.",
+        "en": "Web app for simulating refinancing scenarios, early amortization, and analyzing whether it's worth keeping or canceling loan-linked insurance products."
+      },
+      "fullDescription": {
+        "ca": "# Refi — Simulador de Refinançament\n\nAplicació web estàtica (SPA) que permet simular escenaris de refinançament de préstecs, amortització anticipada i optimització de costos financers, incloent assegurances vinculades. Totes les dades romanen al dispositiu de l'usuari.\n\n## Característiques\n\n- **Gestió de préstecs**: Crea i gestiona fins a 6 préstecs simultanis, amb suport per a interès fix i variable (Euríbor + diferencial)\n- **Simulador d'amortització parcial**: Compara l'efecte de reduir quota vs reduir termini per a qualsevol import\n- **Escenaris de refinançament**: Crea escenaris cancel·lant préstecs existents i substituint-los per nous, amb càlcul automàtic de penalitzacions, comissions i estalvi net\n- **Projeccions d'Euríbor**: Defineix projeccions any per any per simular com evolucionarà la quota en préstecs variables\n- **Anàlisi d'assegurances**: Avalua el cost/benefici de cada assegurança vinculada i recomana si convé mantenir-la o cancel·lar-la\n- **Comparació d'escenaris**: Vista side-by-side per comparar múltiples escenaris i trobar l'opció més rendible\n- **Persistència local**: Totes les dades es guarden al navegador, amb opció d'exportar i importar en JSON\n\n## Tecnologies\n\nReact 19, TypeScript, Vite, Tailwind CSS, Vitest",
+        "es": "# Refi — Simulador de Refinanciación\n\nAplicación web estática (SPA) que permite simular escenarios de refinanciación de préstamos, amortización anticipada y optimización de costes financieros, incluyendo seguros vinculados. Todos los datos permanecen en el dispositivo del usuario.\n\n## Características\n\n- **Gestión de préstamos**: Crea y gestiona hasta 6 préstamos simultáneos, con soporte para interés fijo y variable (Euríbor + diferencial)\n- **Simulador de amortización parcial**: Compara el efecto de reducir cuota vs reducir plazo para cualquier importe\n- **Escenarios de refinanciación**: Crea escenarios cancelando préstamos existentes y sustituyéndolos por nuevos, con cálculo automático de penalizaciones, comisiones y ahorro neto\n- **Proyecciones de Euríbor**: Define proyecciones año a año para simular cómo evolucionará la cuota en préstamos variables\n- **Análisis de seguros**: Evalúa el coste/beneficio de cada seguro vinculado y recomienda si conviene mantenerlo o cancelarlo\n- **Comparación de escenarios**: Vista side-by-side para comparar múltiples escenarios y encontrar la opción más rentable\n- **Persistencia local**: Todos los datos se guardan en el navegador, con opción de exportar e importar en JSON\n\n## Tecnologías\n\nReact 19, TypeScript, Vite, Tailwind CSS, Vitest",
+        "en": "# Refi — Refinancing Simulator\n\nA static web application (SPA) for simulating loan refinancing scenarios, early amortization, and financial cost optimization, including linked insurance products. All data stays on the user's device.\n\n## Features\n\n- **Loan management**: Create and manage up to 6 simultaneous loans, supporting both fixed and variable interest rates (Euribor + spread)\n- **Partial amortization simulator**: Compare the effect of reducing the monthly payment vs shortening the loan term for any amount\n- **Refinancing scenarios**: Create scenarios by canceling existing loans and replacing them with new ones, with automatic calculation of penalties, fees, and net savings\n- **Euribor projections**: Define year-by-year projections to simulate how payments will evolve for variable-rate loans\n- **Insurance analysis**: Evaluate the cost/benefit of each linked insurance product and get recommendations on whether to keep or cancel it\n- **Scenario comparison**: Side-by-side view to compare multiple scenarios and find the most cost-effective option\n- **Local persistence**: All data is stored in the browser, with JSON export and import options\n\n## Technologies\n\nReact 19, TypeScript, Vite, Tailwind CSS, Vitest"
+      },
+      "tags": [
+        "web",
+        "tool"
+      ],
+      "images": [
+        "projects/refi/img/refi-01.webp",
+        "projects/refi/img/refi-02.webp"
+      ],
+      "links": {
+        "github": "https://github.com/aaronFortuno/Refi",
+        "demo": "https://aaronfortuno.github.io/Refi/",
+        "docs": null
+      },
+      "relatedProjects": []
+    },
+    {
       "id": "les-regles-del-joc-han-canviat",
       "type": "note",
       "visible": true,
