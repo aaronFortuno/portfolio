@@ -1,6 +1,40 @@
 {
   "projects": [
     {
+      "id": "delivery-service",
+      "type": "project",
+      "visible": true,
+      "featured": false,
+      "date": "2026-04-11",
+      "projectLanguages": ["ca", "es", "en"],
+      "title": {
+        "ca": "Delivery Service — Joc de rutes en mapa real",
+        "es": "Delivery Service — Juego de rutas en mapa real",
+        "en": "Delivery Service — Real-Map Route Challenge Game"
+      },
+      "shortDescription": {
+        "ca": "Joc multijugador al navegador on els alumnes condueixen vehicles de delivery per carrers reals, competint per trobar les rutes òptimes entre punts de lliurament. Basat en dades OpenStreetMap amb vista 3D, ortofoto satèl·lit i elevació real.",
+        "es": "Juego multijugador en el navegador donde los alumnos conducen vehículos de delivery por calles reales, compitiendo por encontrar las rutas óptimas entre puntos de entrega. Basado en datos OpenStreetMap con vista 3D, ortofoto satélite y elevación real.",
+        "en": "Multiplayer browser game where students drive delivery vehicles through real streets, competing to find optimal routes between delivery points. Built on OpenStreetMap data with 3D view, satellite orthophoto, and real elevation."
+      },
+      "fullDescription": {
+        "ca": "# Delivery Service\n\nJoc educatiu multijugador dissenyat perquè els alumnes practiquin orientació, lectura de mapes i presa de decisions en entorns reals. Sobre la base de mapes OpenStreetMap, cada jugador condueix un vehicle de delivery (bicicleta, scooter, monopatí...) pels carrers d'una zona real, visitant punts de lliurament en l'ordre que considerin òptim.\n\n## Característiques\n\n- **Mapes reals**: carrers, edificis i punts d'interès descarregats d'OpenStreetMap per qualsevol zona del món\n- **Vista 3D**: renderitzat amb Three.js, edificis extrudits, càmera orbital amb tilt ajustable\n- **Ortofoto satèl·lit**: imatges PNOA d'alta resolució (25cm) per Espanya, ESRI com a fallback global\n- **Elevació real**: desnivells reals via OpenTopoData que afecten la velocitat del vehicle\n- **Multijugador**: sistema de sales amb codi, sincronització en temps real via Socket.io\n- **Missions**: checkpoints distribuïts geogràficament, ordre de visita lliure\n- **Minimapa expandible**: vista top-down nord-fixa, arrossegable i amb zoom\n- **HUD complet**: velocímetre, altitud, pendent, temps, progrés de missió\n- **Panell admin**: configurar visibilitat d'ortofoto, elevació, fletxa GPS, jugadors i checkpoints\n- **Resultats**: comparació de rutes, estadístiques i classificació final\n\n## Tecnologies\n\nTypeScript, Three.js, Socket.io, Node.js, Express, Vite, OpenStreetMap, OpenTopoData, PNOA",
+        "es": "# Delivery Service\n\nJuego educativo multijugador diseñado para que los alumnos practiquen orientación, lectura de mapas y toma de decisiones en entornos reales. Sobre la base de mapas OpenStreetMap, cada jugador conduce un vehículo de delivery (bicicleta, scooter, monopatín...) por las calles de una zona real, visitando puntos de entrega en el orden que considere óptimo.\n\n## Características\n\n- **Mapas reales**: calles, edificios y puntos de interés descargados de OpenStreetMap para cualquier zona del mundo\n- **Vista 3D**: renderizado con Three.js, edificios extruidos, cámara orbital con inclinación ajustable\n- **Ortofoto satélite**: imágenes PNOA de alta resolución (25cm) para España, ESRI como fallback global\n- **Elevación real**: desniveles reales vía OpenTopoData que afectan la velocidad del vehículo\n- **Multijugador**: sistema de salas con código, sincronización en tiempo real vía Socket.io\n- **Misiones**: checkpoints distribuidos geográficamente, orden de visita libre\n- **Minimapa expandible**: vista top-down norte-fija, arrastrable y con zoom\n- **HUD completo**: velocímetro, altitud, pendiente, tiempo, progreso de misión\n- **Panel admin**: configurar visibilidad de ortofoto, elevación, flecha GPS, jugadores y checkpoints\n- **Resultados**: comparación de rutas, estadísticas y clasificación final\n\n## Tecnologías\n\nTypeScript, Three.js, Socket.io, Node.js, Express, Vite, OpenStreetMap, OpenTopoData, PNOA",
+        "en": "# Delivery Service\n\nA multiplayer educational game designed for students to practice orientation, map reading, and decision-making in real-world environments. Built on OpenStreetMap data, each player drives a delivery vehicle (bicycle, scooter, skateboard...) through the streets of a real area, visiting delivery points in whatever order they deem optimal.\n\n## Features\n\n- **Real maps**: streets, buildings, and points of interest from OpenStreetMap for any area worldwide\n- **3D view**: Three.js rendering with extruded buildings and adjustable orbital camera\n- **Satellite orthophoto**: high-resolution PNOA imagery (25cm) for Spain, ESRI as global fallback\n- **Real elevation**: actual terrain data from OpenTopoData affecting vehicle speed\n- **Multiplayer**: room system with join codes, real-time sync via Socket.io\n- **Missions**: geographically distributed checkpoints with free visit order\n- **Expandable minimap**: north-fixed top-down view, draggable with zoom\n- **Full HUD**: speedometer, altitude, slope, timer, mission progress\n- **Admin panel**: configure visibility of orthophoto, elevation, GPS arrow, players, and checkpoints\n- **Results**: route comparison, statistics, and final ranking\n\n## Tech Stack\n\nTypeScript, Three.js, Socket.io, Node.js, Express, Vite, OpenStreetMap, OpenTopoData, PNOA"
+      },
+      "tags": ["web", "education", "game", "3d"],
+      "images": [
+        "projects/delivery-service/img/delivery-service-01.webp",
+        "projects/delivery-service/img/delivery-service-02.webp"
+      ],
+      "links": {
+        "github": "https://github.com/aaronFortuno/delivery-service",
+        "demo": "https://aaronfortuno.github.io/delivery-service",
+        "docs": null
+      },
+      "relatedProjects": []
+    },
+    {
       "id": "flastomari",
       "type": "project",
       "visible": true,
