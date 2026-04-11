@@ -1,6 +1,45 @@
 {
   "projects": [
     {
+      "id": "flastomari",
+      "type": "project",
+      "visible": true,
+      "featured": false,
+      "date": "2026-04-11",
+      "projectLanguages": [
+        "ca"
+      ],
+      "title": {
+        "ca": "Flastomari — Renecs en Català",
+        "es": "Flastomari — Insultos en Catalán",
+        "en": "Flastomari — Catalan Curses & Swear Words"
+      },
+      "shortDescription": {
+        "ca": "Eina educativa per explorar renecs, insults i paraulotes en llengua catalana. Inclou 254 entrades amb definicions, exemples, filtres per categoria i dialecte, i una col·lecció d'insults del Capità Haddock.",
+        "es": "Herramienta educativa para explorar insultos, maldiciones y palabrotas en lengua catalana. Incluye 254 entradas con definiciones, ejemplos, filtros por categoría y dialecto, y una colección de insultos del Capitán Haddock.",
+        "en": "An educational tool for exploring Catalan curses, insults, and swear words. Features 254 entries with definitions, examples, category and dialect filters, and a collection of Captain Haddock's insults."
+      },
+      "fullDescription": {
+        "ca": "# Flastomari\n\nEina educativa per apropar els alumnes a la riquesa expressiva del català. En una societat on els renecs i insults es diuen gairebé sempre en castellà, volem demostrar que la nostra llengua disposa d'un repertori tan ampli, creatiu i contundent com qualsevol altra.\n\nEl nom ve del verb *flastomar*: renegar, blasfemar, dir paraulotes.\n\n## Característiques\n\n- **254 entrades**: renecs, insults, exclamacions, imprecacions, malediccions i blasfèmies\n- **122 insults del Capità Haddock**: traduccions catalanes de Tintín per Joaquim Ventalló (Editorial Joventut)\n- **Tots els dialectes**: central, valencià, balear, nord-occidental, tortosí, septentrional i alguerès\n- **Mode classe**: amaga renecs forts per a ús educatiu\n- **Mode fosc/clar**: tema fosc per defecte\n- **Filtres**: per categoria (blasfèmia, exclamació, imprecació, insult, maledicció, renec) i per dialecte/origen\n\n## Tecnologies\n\nHTML, CSS, JavaScript vanilla — sense dependències ni build",
+        "es": "# Flastomari\n\nHerramienta educativa para acercar a los alumnos a la riqueza expresiva del catalán. En una sociedad donde los insultos y maldiciones se dicen casi siempre en castellano, queremos demostrar que nuestra lengua dispone de un repertorio tan amplio, creativo y contundente como cualquier otra.\n\nEl nombre viene del verbo *flastomar*: renegar, blasfemar, decir palabrotas.\n\n## Características\n\n- **254 entradas**: insultos, maldiciones, exclamaciones, imprecaciones, blasfemias y palabrotas\n- **122 insultos del Capitán Haddock**: traducciones catalanas de Tintín por Joaquim Ventalló (Editorial Joventut)\n- **Todos los dialectos**: central, valenciano, balear, noroccidental, tortosino, septentrional y alguerés\n- **Modo clase**: oculta insultos fuertes para uso educativo\n- **Modo oscuro/claro**: tema oscuro por defecto\n- **Filtros**: por categoría (blasfemia, exclamación, imprecación, insulto, maldición, reniego) y por dialecto/origen\n\n## Tecnologías\n\nHTML, CSS, JavaScript vanilla — sin dependencias ni build",
+        "en": "# Flastomari\n\nAn educational tool designed to bring students closer to the expressive richness of the Catalan language. In a society where curses and insults are almost always said in Spanish, we want to show that our language has a repertoire just as vast, creative, and powerful as any other.\n\nThe name comes from the verb *flastomar*: to curse, to blaspheme, to swear.\n\n## Features\n\n- **254 entries**: curses, insults, exclamations, imprecations, maledictions, and blasphemies\n- **122 Captain Haddock insults**: Catalan translations of Tintin by Joaquim Ventalló (Editorial Joventut)\n- **All dialects**: central, Valencian, Balearic, northwestern, Tortosan, northern, and Algherese\n- **Classroom mode**: hides strong curses for educational use\n- **Dark/light mode**: dark theme by default\n- **Filters**: by category (blasphemy, exclamation, imprecation, insult, malediction, curse) and by dialect/origin\n\n## Technologies\n\nHTML, CSS, vanilla JavaScript — no dependencies, no build step"
+      },
+      "tags": [
+        "web",
+        "education"
+      ],
+      "images": [
+        "projects/flastomari/img/flastomari-01.webp",
+        "projects/flastomari/img/flastomari-02.webp"
+      ],
+      "links": {
+        "github": "https://github.com/aaronFortuno/flastomari",
+        "demo": "https://aaronfortuno.github.io/flastomari",
+        "docs": null
+      },
+      "relatedProjects": []
+    },
+    {
       "id": "refi",
       "type": "project",
       "visible": true,
