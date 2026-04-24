@@ -1,6 +1,40 @@
 {
   "projects": [
     {
+      "id": "kompass",
+      "type": "project",
+      "visible": true,
+      "featured": false,
+      "date": "2026-04-23",
+      "projectLanguages": ["ca", "es", "en"],
+      "title": {
+        "ca": "Kompass — Alemany A1 a ritme editorial",
+        "es": "Kompass — Alemán A1 a ritmo editorial",
+        "en": "Kompass — German A1 at editorial pace"
+      },
+      "shortDescription": {
+        "ca": "Web d'autoaprenentatge d'alemany A1 per a catalanoparlants. Lectura pausada fragment a fragment, àudio nadiu Azure Neural TTS a cada exemple, exercicis intercalats i progrés 100% local i exportable. Sense login ni servidor.",
+        "es": "Web de autoaprendizaje de alemán A1 para catalanoparlantes. Lectura pausada fragmento a fragmento, audio nativo Azure Neural TTS en cada ejemplo, ejercicios intercalados y progreso 100% local y exportable. Sin login ni servidor.",
+        "en": "Self-study web app for German A1, aimed at Catalan speakers. Paced reading one fragment at a time, native Azure Neural TTS audio on every example, interleaved exercises, and fully local, exportable progress. No login, no server."
+      },
+      "fullDescription": {
+        "ca": "# Kompass\n\nWeb d'autoaprenentatge d'alemany A1 (A1a + A1b) pensada per a catalanoparlants adults que volen aprendre al seu ritme, sense horaris ni presses. Cada lliçó s'obre en un **Focus Reader** editorial: un fragment per pantalla, tipografia serif, àudio nadiu clicable a cada exemple alemany. El contingut s'estructura en *steps* (píndoles) que alternen explicació narrativa, taules de síntesi i exercicis intercalats, amb una síntesi final al tancament de cada tema.\n\n## Característiques\n\n- **Focus Reader immersiu**: una idea per pantalla, efecte màquina d'escriure opcional i mode autoplay per llegir mans lliures\n- **Àudio nadiu integrat**: pronunciació Azure Neural TTS (veu Seraphina DragonHD) a tots els exemples alemanys, amb pills clicables inline\n- **7 tipus d'exercici**: omple-els-buits, tria múltiple, cert/fals, aparellament, ordenar paraules, conjugació, transformació\n- **Mode Fragment o Pas sencer**: un beat alhora o la pàgina completa per repàs\n- **Música de fons ambiental** (CC0) amb auto-ducking durant els àudios de veu\n- **Progrés 100% local i exportable**: sense servidor ni compte, tot viu al navegador i es pot exportar/importar en JSON\n- **UI trilingüe** (català + castellà), contingut d'estudi en alemany\n- **Tema clar/fosc**, mida de text ajustable, navegació completa per teclat\n- **Mobile-first**: zones de tap per avançar/retrocedir, sidebar plegable\n- **Desplegament estàtic** a GitHub Pages — funciona offline un cop carregat\n\n## Tecnologies\n\nReact 18, Vite 5, React Router 6 (HashRouter), Zustand (amb persist middleware), Tailwind CSS amb tokens semàntics propis, Zod per a validació runtime del contingut, Vitest per als tests. Desplegat amb GitHub Actions a GitHub Pages.\n\n## Llicència\n\nCodi MIT. Imatges CC0 d'Unsplash, música CC0 de Pixabay (DesiFreeMusic), àudio generat amb Azure Neural TTS.",
+        "es": "# Kompass\n\nWeb de autoaprendizaje de alemán A1 (A1a + A1b) pensada para catalanoparlantes adultos que quieren aprender a su ritmo, sin horarios ni prisas. Cada lección se abre en un **Focus Reader** editorial: un fragmento por pantalla, tipografía serif, audio nativo clicable en cada ejemplo alemán. El contenido se estructura en *steps* (píldoras) que alternan explicación narrativa, tablas de síntesis y ejercicios intercalados, con una síntesis final al cierre de cada tema.\n\n## Características\n\n- **Focus Reader inmersivo**: una idea por pantalla, efecto máquina de escribir opcional y modo autoplay para leer con las manos libres\n- **Audio nativo integrado**: pronunciación Azure Neural TTS (voz Seraphina DragonHD) en todos los ejemplos alemanes, con pills clicables inline\n- **7 tipos de ejercicio**: rellenar huecos, elección múltiple, verdadero/falso, emparejamiento, ordenar palabras, conjugación, transformación\n- **Modo Fragmento o Paso entero**: un beat a la vez o la página completa para repaso\n- **Música de fondo ambiental** (CC0) con auto-ducking durante los audios de voz\n- **Progreso 100% local y exportable**: sin servidor ni cuenta, todo vive en el navegador y se puede exportar/importar en JSON\n- **UI trilingüe** (catalán + castellano), contenido de estudio en alemán\n- **Tema claro/oscuro**, tamaño de texto ajustable, navegación completa por teclado\n- **Mobile-first**: zonas de toque para avanzar/retroceder, sidebar plegable\n- **Despliegue estático** en GitHub Pages — funciona offline una vez cargado\n\n## Tecnologías\n\nReact 18, Vite 5, React Router 6 (HashRouter), Zustand (con persist middleware), Tailwind CSS con tokens semánticos propios, Zod para validación runtime del contenido, Vitest para tests. Desplegado con GitHub Actions en GitHub Pages.\n\n## Licencia\n\nCódigo MIT. Imágenes CC0 de Unsplash, música CC0 de Pixabay (DesiFreeMusic), audio generado con Azure Neural TTS.",
+        "en": "# Kompass\n\nSelf-study web app for German A1 (A1a + A1b), aimed at adult Catalan speakers who want to learn at their own pace, no schedules, no pressure. Every lesson opens in an editorial **Focus Reader**: one fragment per screen, serif typography, clickable native audio on every German example. Content is structured in *steps* (bite-sized units) that alternate narrative explanation, synthesis tables and interleaved exercises, closing each topic with a final synthesis.\n\n## Features\n\n- **Immersive Focus Reader**: one idea per screen, optional typewriter effect, and autoplay mode for hands-free reading\n- **Native audio built in**: Azure Neural TTS pronunciation (Seraphina DragonHD voice) on every German example, with clickable inline pills\n- **7 exercise types**: fill-in-the-blank, multiple choice, true/false, matching, word ordering, conjugation, transformation\n- **Fragment or Full-Step mode**: one beat at a time or the whole page for review\n- **Ambient background music** (CC0) with auto-ducking during voice audio\n- **100% local and exportable progress**: no server, no account — everything lives in the browser and can be exported/imported as JSON\n- **Trilingual UI** (Catalan + Spanish), study content in German\n- **Light/dark theme**, adjustable text size, full keyboard navigation\n- **Mobile-first**: tap zones to go forward/back, collapsible sidebar\n- **Static deployment** on GitHub Pages — works offline once loaded\n\n## Tech Stack\n\nReact 18, Vite 5, React Router 6 (HashRouter), Zustand (with persist middleware), Tailwind CSS with custom semantic tokens, Zod for runtime content validation, Vitest for tests. Deployed via GitHub Actions to GitHub Pages.\n\n## Licence\n\nCode MIT. Images CC0 from Unsplash, music CC0 from Pixabay (DesiFreeMusic), audio generated with Azure Neural TTS."
+      },
+      "tags": ["web", "education", "mvp"],
+      "images": [
+        "projects/kompass/img/kompass-01.webp",
+        "projects/kompass/img/kompass-02.webp"
+      ],
+      "links": {
+        "github": "https://github.com/aaronFortuno/Kompass",
+        "demo": "https://aaronfortuno.github.io/Kompass/",
+        "docs": null
+      },
+      "relatedProjects": []
+    },
+    {
       "id": "art-map",
       "type": "project",
       "visible": true,
