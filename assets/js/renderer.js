@@ -248,13 +248,7 @@ const Renderer = (() => {
   }
 
   function _projLangLabel(code) {
-    const map = {
-      ca: I18n.get('projectLang.ca') || 'Català',
-      es: I18n.get('projectLang.es') || 'Castellà',
-      en: I18n.get('projectLang.en') || 'Anglès',
-      agnostic: I18n.get('projectLang.agnostic') || 'Sense idioma',
-    };
-    return map[code] || code;
+    return I18n.get(`projectLang.${code}`) || code;
   }
 
   function _escapeHtml(str) {

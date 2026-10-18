@@ -4,7 +4,7 @@
 
 const Filters = (() => {
   let _activeTagFilters   = new Set(); // tag IDs
-  let _activeLangFilters  = new Set(); // 'ca'|'es'|'en'|'agnostic'
+  let _activeLangFilters  = new Set(); // project language codes
   let _onChangeCallback   = null;
   let _allTags            = {};        // { tagId: { ca, es, en } }
   let _allProjects        = [];
@@ -64,15 +64,9 @@ const Filters = (() => {
 
     // Lang chips
     const langChipsEl = container.querySelector('#lang-chips');
-    const LANG_LABELS = {
-      ca: I18n.get('projectLang.ca') || 'Català',
-      es: I18n.get('projectLang.es') || 'Castellà',
-      en: I18n.get('projectLang.en') || 'Anglès',
-      agnostic: I18n.get('projectLang.agnostic') || 'Sense idioma',
-    };
     _makeChip(langChipsEl, 'lang', '__all__', I18n.get('nav.filterAll') || 'Tots', null, true);
     Object.entries(langCounts).forEach(([code, count]) => {
-      _makeChip(langChipsEl, 'lang', code, LANG_LABELS[code] || code, count);
+      _makeChip(langChipsEl, 'lang', code, I18n.get(`projectLang.${code}`) || code, count);
     });
 
     // Clear button
@@ -135,14 +129,8 @@ const Filters = (() => {
       _makeActiveBadge(bar, label, () => { _activeTagFilters.delete(tagId); _refresh(); });
     });
 
-    const LANG_LABELS = {
-      ca: I18n.get('projectLang.ca') || 'Català',
-      es: I18n.get('projectLang.es') || 'Castellà',
-      en: I18n.get('projectLang.en') || 'Anglès',
-      agnostic: I18n.get('projectLang.agnostic') || 'Sense idioma',
-    };
     _activeLangFilters.forEach(code => {
-      _makeActiveBadge(bar, LANG_LABELS[code] || code, () => { _activeLangFilters.delete(code); _refresh(); });
+      _makeActiveBadge(bar, I18n.get(`projectLang.${code}`) || code, () => { _activeLangFilters.delete(code); _refresh(); });
     });
   }
 

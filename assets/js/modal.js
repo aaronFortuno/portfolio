@@ -135,18 +135,12 @@ const Modal = (() => {
       </div>` : '';
 
     // Project language pills — clickable for notes to switch content language
-    const LANG_LABELS = {
-      ca: I18n.get('projectLang.ca') || 'Català',
-      es: I18n.get('projectLang.es') || 'Castellà',
-      en: I18n.get('projectLang.en') || 'Anglès',
-      agnostic: I18n.get('projectLang.agnostic') || 'Sense idioma',
-    };
     const langPillsHtml = projectLangs.length > 0
       ? `<span class="modal-proj-langs">
            <span>${I18n.get('projectLang.available') || 'Disponible en'}:</span>
            ${projectLangs.map(l => isNote
-             ? `<button class="card-lang-pill lang-switch-btn${l === lang ? ' active' : ''}" data-lang="${l}">${LANG_LABELS[l] || l}</button>`
-             : `<span class="card-lang-pill">${LANG_LABELS[l] || l}</span>`
+             ? `<button class="card-lang-pill lang-switch-btn${l === lang ? ' active' : ''}" data-lang="${l}">${I18n.get(`projectLang.${l}`) || l}</button>`
+             : `<span class="card-lang-pill">${I18n.get(`projectLang.${l}`) || l}</span>`
            ).join('')}
          </span>`
       : '';

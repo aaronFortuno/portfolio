@@ -42,7 +42,14 @@
     "agnostic": "Language-agnostic",
     "ca": "Catalan",
     "es": "Spanish",
-    "en": "English"
+    "en": "English",
+    "de": "German",
+    "fr": "French",
+    "it": "Italian",
+    "pt": "Portuguese",
+    "nl": "Dutch",
+    "eu": "Basque",
+    "gl": "Galician"
   },
   "empty": {
     "noResults": "No projects match the selected filters.",

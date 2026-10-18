@@ -42,7 +42,14 @@
     "agnostic": "Sense idioma",
     "ca": "Català",
     "es": "Castellà",
-    "en": "Anglès"
+    "en": "Anglès",
+    "de": "Alemany",
+    "fr": "Francès",
+    "it": "Italià",
+    "pt": "Portuguès",
+    "nl": "Neerlandès",
+    "eu": "Euskara",
+    "gl": "Gallec"
   },
   "empty": {
     "noResults": "Cap projecte coincideix amb els filtres seleccionats.",

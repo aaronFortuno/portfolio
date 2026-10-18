@@ -1,6 +1,55 @@
 {
   "projects": [
     {
+      "id": "pentagrama",
+      "type": "project",
+      "visible": true,
+      "featured": false,
+      "date": "2026-10-16",
+      "projectLanguages": [
+        "ca",
+        "es",
+        "en",
+        "de",
+        "fr",
+        "it",
+        "pt",
+        "nl",
+        "eu",
+        "gl"
+      ],
+      "title": {
+        "ca": "Pentagrama — Paper pautat a mida",
+        "es": "Pentagrama — Papel pautado a medida",
+        "en": "Pentagrama — Custom staff paper"
+      },
+      "shortDescription": {
+        "ca": "Crea paper pautat a mida amb previsualització en directe: formats A3, A4 i Letter, pentagrames agrupats i plantilles per a diferents instruments. Imprimeix o desa en PDF, sense marques d’aigua ni registre. Disponible en deu idiomes.",
+        "es": "Crea papel pautado a medida con vista previa en directo: formatos A3, A4 y Letter, pentagramas agrupados y plantillas para distintos instrumentos. Imprime o guarda en PDF, sin marcas de agua ni registro. Disponible en diez idiomas.",
+        "en": "Create custom staff paper with a live preview: A3, A4 and Letter sizes, grouped staves and templates for different instruments. Print or save as PDF, with no watermarks or sign-up. Available in ten languages."
+      },
+      "fullDescription": {
+        "ca": "# Pentagrama\n\nEina gratuïta i de codi obert per preparar **paper pautat a mida i escriure música a mà**. Configura el full, comprova el resultat en directe i imprimeix-lo net, sense marques d’aigua ni necessitat de crear un compte.\n\n## Característiques\n\n- **A3, A4 i Letter**, en vertical o horitzontal, amb marges ajustables.\n- **Pentagrames personalitzables**: nombre, gruix de línia, interlineat i espai superior.\n- **Agrupacions i blocs** amb separacions diferents per a veus, piano o famílies instrumentals.\n- **Plantilles suggerides i pròpies**, amb exemples per a coral i orquestra; les pròpies es desen al navegador.\n- **Configuracions compartibles** mitjançant un enllaç.\n- **Previsualització amb zoom**, desfer i refer, impressió i exportació a PDF.\n- **Deu idiomes**: català, castellà, anglès, alemany, francès, italià, portuguès, neerlandès, euskara i gallec.\n- **Descobertes musicals**: una nota interactiva amb sons de glockenspiel, melodies i petites històries de compositors.\n\n## Tecnologies\n\nHTML, CSS i JavaScript, amb generació de pàgines per idioma i desplegament estàtic a GitHub Pages amb domini propi.\n\n## Llicència i suport\n\nGNU GPL v3. Projecte basat en la filosofia **Value for Value**, amb aportacions voluntàries.",
+        "es": "# Pentagrama\n\nHerramienta gratuita y de código abierto para preparar **papel pautado a medida y escribir música a mano**. Configura la hoja, comprueba el resultado en directo e imprímela limpia, sin marcas de agua ni necesidad de crear una cuenta.\n\n## Características\n\n- **A3, A4 y Letter**, en vertical u horizontal, con márgenes ajustables.\n- **Pentagramas personalizables**: cantidad, grosor de línea, interlineado y espacio superior.\n- **Agrupaciones y bloques** con separaciones distintas para voces, piano o familias instrumentales.\n- **Plantillas sugeridas y propias**, con ejemplos para coro y orquesta; las propias se guardan en el navegador.\n- **Configuraciones compartibles** mediante un enlace.\n- **Vista previa con zoom**, deshacer y rehacer, impresión y exportación a PDF.\n- **Diez idiomas**: catalán, castellano, inglés, alemán, francés, italiano, portugués, neerlandés, euskera y gallego.\n- **Descubrimientos musicales**: una nota interactiva con sonidos de glockenspiel, melodías y pequeñas historias de compositores.\n\n## Tecnologías\n\nHTML, CSS y JavaScript, con generación de páginas por idioma y despliegue estático en GitHub Pages con dominio propio.\n\n## Licencia y apoyo\n\nGNU GPL v3. Proyecto basado en la filosofía **Value for Value**, con aportaciones voluntarias.",
+        "en": "# Pentagrama\n\nA free, open-source tool for creating **custom staff paper to write music by hand**. Configure your sheet, check the live preview and print clean pages, with no watermarks or account required.\n\n## Features\n\n- **A3, A4 and Letter**, portrait or landscape, with adjustable margins.\n- **Customizable staves**: count, line thickness, line spacing and top space.\n- **Groups and blocks** with different gaps for voices, piano or instrument families.\n- **Suggested and personal templates**, including choir and orchestra examples; personal templates are saved in your browser.\n- **Shareable configurations** via a link.\n- **Zoomable preview**, undo and redo, printing and PDF export.\n- **Ten languages**: Catalan, Spanish, English, German, French, Italian, Portuguese, Dutch, Basque and Galician.\n- **Musical discoveries**: an interactive note with glockenspiel sounds, melodies and short stories about composers.\n\n## Technology\n\nHTML, CSS and JavaScript, with generated language pages and static hosting on GitHub Pages using a custom domain.\n\n## Licence and support\n\nGNU GPL v3. Built around the **Value for Value** philosophy, with voluntary contributions."
+      },
+      "tags": [
+        "web",
+        "education",
+        "tool"
+      ],
+      "images": [
+        "projects/pentagrama/img/pentagrama-01.webp",
+        "projects/pentagrama/img/pentagrama-02.webp"
+      ],
+      "links": {
+        "github": "https://github.com/aaronFortuno/pentagrama",
+        "demo": "https://pentagrama.page/",
+        "docs": null
+      },
+      "relatedProjects": []
+    },
+    {
       "id": "kompass",
       "type": "project",
       "visible": true,

@@ -42,7 +42,14 @@
     "agnostic": "Sin idioma",
     "ca": "Catalán",
     "es": "Castellano",
-    "en": "Inglés"
+    "en": "Inglés",
+    "de": "Alemán",
+    "fr": "Francés",
+    "it": "Italiano",
+    "pt": "Portugués",
+    "nl": "Neerlandés",
+    "eu": "Euskera",
+    "gl": "Gallego"
   },
   "empty": {
     "noResults": "Ningún proyecto coincide con los filtros seleccionados.",
