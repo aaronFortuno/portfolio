@@ -1,6 +1,47 @@
 {
   "projects": [
     {
+      "id": "despert",
+      "type": "project",
+      "visible": true,
+      "featured": false,
+      "date": "2026-10-24",
+      "projectLanguages": [
+        "ca",
+        "es",
+        "eu",
+        "gl",
+        "en"
+      ],
+      "title": {
+        "ca": "Despert — Mantén l’ordinador despert",
+        "es": "Despert — Mantén el ordenador despierto",
+        "en": "Despert — Keep your computer awake"
+      },
+      "shortDescription": {
+        "ca": "Una tassa de cafè a la safata de Windows per mantenir l’ordinador despert amb un clic. Portable, de codi obert i sense finestres fent nosa. Disponible en cinc idiomes.",
+        "es": "Una taza de café en la bandeja de Windows para mantener el ordenador despierto con un clic. Portable, de código abierto y sin ventanas que estorben. Disponible en cinco idiomas.",
+        "en": "A coffee cup in the Windows system tray to keep your computer awake with one click. Portable, open source, and with no window in the way. Available in five languages."
+      },
+      "fullDescription": {
+        "ca": "# Despert\n\nUna petita utilitat per mantenir **Windows despert mentre hi ha una feina en marxa**. Neix de la necessitat de treballar amb processos llargs en equips gestionats, sense haver de moure el ratolí contínuament o deixar un vídeo en reproducció.\n\n[Descarrega el portable i les fonts](https://github.com/aaronFortuno/despert/releases/latest).\n\n## Com funciona\n\n- **Un clic a la tassa** alterna actiu/desactiu: amb fum està actiu; sense fum està desactivat.\n- **Activació indefinida** fins que el desactives o surts, sense modes ni temporitzadors.\n- **Portable per a Windows 10/11**, amb .NET Framework 4.8, sense instal·lador ni permisos d’administrador.\n- **Inici opcional amb Windows**, sempre desactivat d’entrada.\n- **Pausa els efectes en bloquejar o suspendre la sessió** i els reprèn si continuava activat.\n- **Cinc idiomes** segons Windows: català, castellà, euskera, gallec i anglès.\n\n## Transparència\n\nCodi i icones originals sota **MIT**, sense telemetria ni peticions de xarxa en segon pla. Els paquets inclouen fonts, instruccions de compilació reproduïble i manifests SHA-256 per comparar l’executable byte per byte. La compatibilitat amb cada equip gestionat s’ha de comprovar al dispositiu.\n\nEl portable encara es distribueix **sense signatura digital** i Windows pot mostrar «Editor desconegut» o un avís de SmartScreen. Consulta l’[estat de la firma](https://github.com/aaronFortuno/despert/blob/main/docs/CODE_SIGNING_POLICY.md).\n\n## Tecnologies i suport\n\nC# 5, .NET Framework 4.8, Windows Forms i APIs natives de Windows. Filosofia **Value for Value**, amb aportacions voluntàries.",
+        "es": "# Despert\n\nUna pequeña utilidad para mantener **Windows despierto mientras hay un trabajo en marcha**. Nace de la necesidad de trabajar con procesos largos en equipos gestionados, sin tener que mover el ratón continuamente o dejar un vídeo en reproducción.\n\n[Descarga el portable y el código fuente](https://github.com/aaronFortuno/despert/releases/latest).\n\n## Cómo funciona\n\n- **Un clic en la taza** alterna activo/inactivo: con vapor está activo; sin vapor está desactivado.\n- **Activación indefinida** hasta que lo desactivas o sales, sin modos ni temporizadores.\n- **Portable para Windows 10/11**, con .NET Framework 4.8, sin instalador ni permisos de administrador.\n- **Inicio opcional con Windows**, siempre desactivado al abrirse.\n- **Pausa sus efectos al bloquear o suspender la sesión** y los reanuda si seguía activado.\n- **Cinco idiomas** según Windows: catalán, castellano, euskera, gallego e inglés.\n\n## Transparencia\n\nCódigo e iconos originales bajo **MIT**, sin telemetría ni peticiones de red en segundo plano. Los paquetes incluyen fuentes, instrucciones de compilación reproducible y manifiestos SHA-256 para comparar el ejecutable byte a byte. La compatibilidad con cada equipo gestionado debe comprobarse en el dispositivo.\n\nEl portable todavía se distribuye **sin firma digital** y Windows puede mostrar «Editor desconocido» o un aviso de SmartScreen. Consulta el [estado de la firma](https://github.com/aaronFortuno/despert/blob/main/docs/CODE_SIGNING_POLICY.md).\n\n## Tecnologías y apoyo\n\nC# 5, .NET Framework 4.8, Windows Forms y APIs nativas de Windows. Filosofía **Value for Value**, con aportaciones voluntarias.",
+        "en": "# Despert\n\nA small utility to keep **Windows awake while a task is running**. Created for long-running work on managed computers, without constantly moving the mouse or leaving a video playing.\n\n[Download the portable app and source](https://github.com/aaronFortuno/despert/releases/latest).\n\n## How it works\n\n- **One click on the cup** toggles active/inactive: steam means active; no steam means inactive.\n- **Stays active indefinitely** until switched off or closed, with no modes or timers.\n- **Portable for Windows 10/11**, with .NET Framework 4.8, requiring no installer or administrator rights.\n- **Optional Windows startup**, always opening inactive.\n- **Pauses its effects when the session locks or suspends**, then resumes if it was still active.\n- **Five languages** following Windows: Catalan, Spanish, Basque, Galician and English.\n\n## Transparency\n\nOriginal code and icons under **MIT**, with no telemetry or background network requests. Packages include source, reproducible-build instructions and SHA-256 manifests to compare the executable byte for byte. Compatibility with each managed computer must be checked on that device.\n\nThe portable app is currently **unsigned**, so Windows may show an unknown-publisher or SmartScreen warning. See the [code-signing status](https://github.com/aaronFortuno/despert/blob/main/docs/CODE_SIGNING_POLICY.md).\n\n## Technology and support\n\nC# 5, .NET Framework 4.8, Windows Forms and native Windows APIs. Built around **Value for Value**, with voluntary contributions."
+      },
+      "tags": [
+        "tool"
+      ],
+      "images": [
+        "projects/despert/img/despert-01.png"
+      ],
+      "links": {
+        "github": "https://github.com/aaronFortuno/despert",
+        "demo": null,
+        "docs": "https://github.com/aaronFortuno/despert#readme"
+      },
+      "relatedProjects": []
+    },
+    {
       "id": "pentagrama",
       "type": "project",
       "visible": true,
