@@ -1,6 +1,41 @@
 {
   "projects": [
     {
+      "id": "plec",
+      "type": "project",
+      "visible": true,
+      "featured": false,
+      "date": "2026-10-28",
+      "projectLanguages": ["ca"],
+      "title": {
+        "ca": "Plec — Escolta. Escriu. Desplega.",
+        "es": "Plec — Escucha. Escribe. Despliega.",
+        "en": "Plec — Listen. Write. Unfold."
+      },
+      "shortDescription": {
+        "ca": "Prepara dictats en català amb un full plegable que amaga el solucionari. Filtra 3.299 mots i 96 pseudoparaules, descarrega el PDF i recupera el dictat amb un codi. Àudios en català central i valencià per practicar al propi ritme.",
+        "es": "Prepara dictados en catalán con una hoja plegable que oculta las soluciones. Filtra 3.299 palabras y 96 pseudopalabras, descarga el PDF y recupera el dictado con un código. Audios en catalán central y valenciano para practicar al propio ritmo.",
+        "en": "Prepare Catalan dictations on a foldable sheet that hides the answers. Filter 3,299 words and 96 pseudowords, download a PDF and retrieve the dictation with a code. Central Catalan and Valencian audio for self-paced practice."
+      },
+      "fullDescription": {
+        "ca": "# Plec\n\n**Escolta. Escriu. Desplega.** Una eina gratuïta i de codi obert per preparar dictats autocorrectius en català. Neix de la pràctica a l'aula: l'alumnat escriu al full plegat i, en acabar, el desplega per veure el model i revisar el que ha escrit. Forma part d'**ortogra.fi**.\n\n## Del paper al dictat oral\n\n- **Fulls A4 en PDF**, amb plec a terços o a quarts i solucionari amagat a esquerra o dreta.\n- **3.299 mots i 96 pseudoparaules**, amb filtres per focus ortogràfics, nivell orientatiu i una selecció de 350 mots de vocabulari bàsic validada pel docent.\n- **De 8 a 24 elements** per ajustar la llargada de la pràctica.\n- **Codis reproduïbles** que reconstrueixen els mateixos mots en el mateix ordre; també es poden buscar combinacions que continguin alguns mots obligatoris.\n- **QR i enllaç directe** al dictat, amb la varietat de pronunciació definida pel docent.\n- **Mode oral de concentració**, amb reproduccions limitades per mot i resposta al paper, per treballar al propi ritme sense haver de dictar en directe.\n- **Àudios de català central i valencià**, amb catàleg consultable, transcripcions IPA i banderes per comunicar incidències.\n\n## Una eina en revisió oberta\n\nLa revisió auditiva individual i de les transcripcions continua oberta. Les IPA mallorquines són propostes publicades; els seus àudios estan en pausa perquè les proves de síntesi no han ofert una dicció prou clara i consistent. El mode de resposta i correcció íntegrament digital és una línia futura.\n\n## Tecnologia i suport\n\nHTML, CSS i JavaScript, PDF generat al navegador i allotjament estàtic a GitHub Pages. Els àudios estan pregenerats: l'ús del web no fa peticions de síntesi. Sense compte d'usuari. Codi original sota **MIT**, amb les atribucions de cada recurs, i suport voluntari **Value for Value**.",
+        "es": "# Plec\n\n**Escucha. Escribe. Despliega.** Una herramienta gratuita y de código abierto para preparar dictados autocorrectivos en catalán. Nace de la práctica en el aula: el alumnado escribe en la hoja plegada y, al terminar, la despliega para ver el modelo y revisar lo escrito. Forma parte de **ortogra.fi**.\n\n## Del papel al dictado oral\n\n- **Hojas A4 en PDF**, con pliegues en tercios o cuartos y soluciones ocultas a izquierda o derecha.\n- **3.299 palabras y 96 pseudopalabras**, con filtros por aspectos ortográficos, nivel orientativo y una selección de 350 palabras de vocabulario básico validada por el docente.\n- **De 8 a 24 elementos** para ajustar la duración de la práctica.\n- **Códigos reproducibles** que reconstruyen las mismas palabras en el mismo orden; también se pueden buscar combinaciones que incluyan algunas palabras obligatorias.\n- **QR y enlace directo** al dictado, con la variedad de pronunciación definida por el docente.\n- **Modo oral de concentración**, con reproducciones limitadas por palabra y respuesta en papel, para trabajar al propio ritmo sin un dictado en directo.\n- **Audios de catalán central y valenciano**, con catálogo consultable, transcripciones IPA y banderas para comunicar incidencias.\n\n## Una herramienta en revisión abierta\n\nLa revisión auditiva individual y de las transcripciones sigue abierta. Las IPA mallorquinas son propuestas publicadas; sus audios están en pausa porque las pruebas de síntesis no han ofrecido una dicción suficientemente clara y consistente. La respuesta y corrección íntegramente digitales son una línea futura.\n\n## Tecnología y apoyo\n\nHTML, CSS y JavaScript, PDF generado en el navegador y alojamiento estático en GitHub Pages. Los audios están pregenerados: el uso del sitio no hace peticiones de síntesis. Sin cuenta de usuario. Código original bajo **MIT**, con las atribuciones de cada recurso, y apoyo voluntario **Value for Value**.",
+        "en": "# Plec\n\n**Listen. Write. Unfold.** A free, open-source tool for preparing self-correcting Catalan dictations. Created through classroom practice: pupils write on a folded sheet, then unfold it to reveal the model and check their spelling. Part of **ortogra.fi**.\n\n## From paper to audio dictation\n\n- **A4 PDF worksheets**, with folds in thirds or quarters and answers hidden on either side.\n- **3,299 words and 96 pseudowords**, filtered by spelling focus, suggested level and a teacher-approved selection of 350 basic vocabulary words.\n- **8 to 24 items** to adjust the length of each exercise.\n- **Reproducible codes** that reconstruct the same words in the same order; searches can also find combinations containing specific required words.\n- **QR codes and direct links**, with the pronunciation variety set by the teacher.\n- **Focused audio mode**, with limited plays per word and answers written on paper, for self-paced practice without a live reader.\n- **Central Catalan and Valencian recordings**, with a browsable catalogue, IPA transcriptions and flags to report issues.\n\n## Open review\n\nIndividual audio and transcription review is ongoing. Mallorcan IPA proposals are published, but their audio is on hold because synthesis trials have not delivered sufficiently clear, consistent diction. Fully digital answers and marking remain future work.\n\n## Technology and support\n\nHTML, CSS and JavaScript, browser-generated PDFs and static hosting on GitHub Pages. Audio is pregenerated: using the site makes no synthesis requests. No user account required. Original code under **MIT**, with individual resource attributions, and voluntary **Value for Value** support."
+      },
+      "tags": ["web", "education", "tool"],
+      "images": [
+        "projects/plec/img/plec-01.webp",
+        "projects/plec/img/plec-02.webp",
+        "projects/plec/img/plec-03.webp"
+      ],
+      "links": {
+        "github": "https://github.com/aaronFortuno/plec-dictats",
+        "demo": "https://plec.ortogra.fi/",
+        "docs": "https://github.com/aaronFortuno/plec-dictats#readme"
+      },
+      "relatedProjects": []
+    },
+    {
       "id": "despert",
       "type": "project",
       "visible": true,
